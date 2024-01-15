@@ -1,9 +1,1 @@
 jupyter-book
-jupyterlab
-matplotlib
-numpy
-dynasaur
-objective_rating_metrics
-reliability
-ipysheet
-lifelines
