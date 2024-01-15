@@ -1,0 +1,43 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: main
+# parts:
+#   - caption: Submodels
+#     chapters:
+#     - file: sections/Head Neck
+#       sections:
+#       - file: Stemper-2004-head-neck/stemper-2004
+#       - file: Kang-2018-head-neck/Kang-2018
+#     - file: sections/Cervical Spine
+#       sections:
+#       - file: Nightingale-2007-cervical-spine/Nightingale-2007
+#       - file: Punjabi-2001-cervical-spine/Punjabi-2001
+#     - file: sections/Upper Extremity
+#     - file: sections/Thorax
+#       sections:
+#       - file: Kang-2020-isolated-rib/Kang-2020
+#     - file: sections/Thoracic Spine
+#     - file: sections/Lumbar spine
+#       sections:
+#       - file: Demetropoulus-1988-lumbar-spine/Demetropolus-1998
+#       - file: Yamamoto-1990-lumbar-spine/yamamoto-1990
+#     - file: sections/Pelvis
+#       sections:
+#       - file: Kemper-2008-Pelvis/kemper-2008
+#     - file: sections/Lower Extremity
+#       sections:
+#       - file: Ivarsson-2009-femur-shaft/Ivarsson-2009
+#   - caption: Full body - Passive
+#     chapters:
+#     - file: sections/Front Impact
+#       sections:
+#       - file: Crandell-2011-gold-standard-2/SAFER_10.0/GS2
+#       - file: lebarbe-2012-frontal-hub/SAFER_10.0/lebarbe
+#       - file: Kent-2004-table-top/SAFER10.0/Kent-2003-tabletop-3pt
+#     - file: sections/Side Impact
+#       sections:
+#       - file: Miller-2013-Nearside/SAFER10.0/Miller-2013
+#       - file: Viano-1989-hub-impacts/Viano-1989
+#     - file: sections/Rear Impact
