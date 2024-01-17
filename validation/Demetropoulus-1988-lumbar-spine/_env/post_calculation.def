@@ -1,0 +1,185 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},{
+	"DATA VISUALIZATION": 
+	[
+    {		
+        "name": "displacementx",
+		"part_of": "lower_pot",
+		"x": {"label": "time","type": "RIGID_BODY","ID": "lower_potting","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "RIGID_BODY","ID": "lower_potting","array": ["(0, global_dx)"]}
+	},{		
+        "name": "displacementy",
+		"part_of": "lower_pot",
+		"x": {"label": "time","type": "RIGID_BODY","ID": "lower_potting","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "RIGID_BODY","ID": "lower_potting","array": ["(0, global_dy)"]}
+	},{		
+        "name": "displacementz",
+		"part_of": "lower_pot",
+		"x": {"label": "time","type": "RIGID_BODY","ID": "lower_potting","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "RIGID_BODY","ID": "lower_potting","array": ["(0, global_dz)"]}
+	},{
+        "name": "Forcex",
+        "part_of": "upper_pot",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, time)"]},
+        "y": {
+                "function": {
+                    "name": "res",
+                    "param": {
+                        "data_vector": {
+                            "function": {
+                                "name": "cfc",
+                                "param": {
+                                    "cfc": 60,
+                                    "time": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "upper_potting",
+                                        "array": ["(0, time)"]
+                                    },
+                                    "sampled_array": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "upper_potting",
+                                        "array": ["(0, x_force)"]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "label": "force"
+            }
+    },{
+        "name": "Forcey",
+        "part_of": "upper_pot",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, time)"]},
+        "y": {
+                "function": {
+                    "name": "res",
+                    "param": {
+                        "data_vector": {
+                            "function": {
+                                "name": "cfc",
+                                "param": {
+                                    "cfc": 60,
+                                    "time": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "upper_potting",
+                                        "array": ["(0, time)"]
+                                    },
+                                    "sampled_array": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "upper_potting",
+                                        "array": ["(0, y_force)"]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "label": "force"
+            }
+    },{
+        "name": "Forcez",
+        "part_of": "upper_pot",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, time)"]},
+        "y": {
+                "function": {
+                    "name": "res",
+                    "param": {
+                        "data_vector": {
+                            "function": {
+                                "name": "cfc",
+                                "param": {
+                                    "cfc": 60,
+                                    "time": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "upper_potting",
+                                        "array": ["(0, time)"]
+                                    },
+                                    "sampled_array": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "upper_potting",
+                                        "array": ["(0, z_force)"]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "label": "force"
+            }
+    },{
+        "name": "RotationX",
+        "part_of": "bending",
+        "x": {"label": "time","type": "RIGID_BODY","ID": "up_rb","array": ["(0, time)"]},
+        "y": {"function": { "name": "res","param": {"data_vector": {"function": {"name": "cfc",
+                                "param": {
+										"cfc": 60,
+										"time": {"type": "RIGID_BODY","ID": "up_rb","array": ["(0, time)"]},
+										"sampled_array": {"type": "RIGID_BODY","ID": "up_rb","array": ["(0, global_rdx)"]}
+                                		}}}}},
+                "label": "Rotation"}
+    },{
+        "name": "RotationY",
+        "part_of": "bending",
+        "x": {"label": "time","type": "RIGID_BODY","ID": "up_rb","array": ["(0, time)"]},
+        "y": {"function": { "name": "res","param": {"data_vector": {"function": {"name": "cfc",
+                                "param": {
+										"cfc": 60,
+										"time": {"type": "RIGID_BODY","ID": "up_rb","array": ["(0, time)"]},
+										"sampled_array": {"type": "RIGID_BODY","ID": "up_rb","array": ["(0, global_rdy)"]}
+                                		}}}}},
+                "label": "Rotation"}
+    },{
+        "name": "RotationZ",
+        "part_of": "bending",
+        "x": {"label": "time","type": "RIGID_BODY","ID": "up_rb","array": ["(0, time)"]},
+        "y": {"function": { "name": "res","param": {"data_vector": {"function": {"name": "cfc",
+                                "param": {
+										"cfc": 60,
+										"time": {"type": "RIGID_BODY","ID": "up_rb","array": ["(0, time)"]},
+										"sampled_array": {"type": "RIGID_BODY","ID": "up_rb","array": ["(0, global_rdz)"]}
+                                		}}}}},
+                "label": "Rotation"}
+    },
+    {
+        "name": "Momentx",
+        "part_of": "bending",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, time)"]},
+        "y": {"function": { "name": "res","param": {"data_vector": {"function": {"name": "cfc",
+                                "param": {
+										"cfc": 60,
+										"time": {"type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, time)"]},
+										"sampled_array": {"type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, xmoment)"]}
+                                		}}}}},
+                "label": "moment"}
+    },{
+        "name": "Momenty",
+        "part_of": "bending",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, time)"]},
+        "y": {"function": { "name": "res","param": {"data_vector": {"function": {"name": "cfc",
+                                "param": {
+										"cfc": 60,
+										"time": {"type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, time)"]},
+										"sampled_array": {"type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, ymoment)"]}
+                                		}}}}},
+                "label": "moment"}
+    },{
+        "name": "Momentz",
+        "part_of": "bending",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, time)"]},
+        "y": {"function": { "name": "res","param": {"data_vector": {"function": {"name": "cfc",
+                                "param": {
+										"cfc": 60,
+										"time": {"type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, time)"]},
+										"sampled_array": {"type": "BOUNDARY_CONDITION","ID": "lp_bc","array": ["(0, zmoment)"]}
+                                		}}}}},
+                "label": "moment"}
+    }
+    ]
+    }
+]           
