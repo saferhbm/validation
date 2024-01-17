@@ -1,0 +1,135 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},{
+	"DATA VISUALIZATION": 
+	[
+	{
+		"name": "L1x",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L1","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L1","array": ["(0, rx_displacement)"]}
+	},{
+		"name": "L1y",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L1","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L1","array": ["(0, ry_displacement)"]}
+										
+	},{
+		"name": "L1z",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L1","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L1","array": ["(0, rz_displacement)"]}
+	},{
+		"name": "L2x",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L2","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L2","array": ["(0, rx_displacement)"]}
+	},{
+		"name": "L2y",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L2","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L2","array": ["(0, ry_displacement)"]}
+	},{
+		"name": "L2z",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L2","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L2","array": ["(0, rz_displacement)"]}
+	},{
+		"name": "L3x",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L3","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L3","array": ["(0, rx_displacement)"]}
+	},{
+		"name": "L3y",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L3","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L3","array": ["(0, ry_displacement)"]}
+	},{
+		"name": "L3z",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L3","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L3","array": ["(0, rz_displacement)"]}
+	},{
+		"name": "L4x",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L4","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L4","array": ["(0, rx_displacement)"]}
+	},{
+		"name": "L4y",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L4","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L4","array": ["(0, ry_displacement)"]}
+	},{
+		"name": "L4z",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L4","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L4","array": ["(0, rz_displacement)"]}
+	},{
+		"name": "L5x",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L5","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L5","array": ["(0, rx_displacement)"]}
+	},{
+		"name": "L5y",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L5","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L5","array": ["(0, ry_displacement)"]}
+	},{
+		"name": "L5z",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "L5","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "L5","array": ["(0, rz_displacement)"]}
+	},{
+		"name": "S1x",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "S1","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "S1","array": ["(0, rx_displacement)"]}
+	},{
+		"name": "S1y",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "S1","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "S1","array": ["(0, rx_displacement)"]}
+	},{
+		"name": "S1z",
+		"part_of": "Spine",
+		"x": {"label": "time","type": "NODE","ID": "S1","array": ["(0, time)"]},
+		"y": {"label": "angle","type": "NODE","ID": "S1","array": ["(0, rz_displacement)"]}
+	},
+    {
+        "name": "Momentx",
+        "part_of": "loadcell",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, time)"]},
+        "y": {"label": "moment","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, xmoment)"]}
+    },{
+        "name": "Momenty",
+        "part_of": "loadcell",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, time)"]},
+        "y": {"label": "moment","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, ymoment)"]}
+    },{
+        "name": "Momentz",
+        "part_of": "loadcell",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, time)"]},
+        "y": {"label": "moment","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, zmoment)"]}
+    },{
+        "name": "RotationX",
+        "part_of": "loadcell",
+        "x": {"label": "time","type": "RIGID_BODY","ID": "gyro","array": ["(0, time)"]},
+        "y": {"label": "Rotation","type": "RIGID_BODY","ID": "gyro","array": ["(0, global_rdx)"]}
+    },{
+        "name": "RotationY",
+        "part_of": "loadcell",
+        "x": {"label": "time","type": "RIGID_BODY","ID": "gyro","array": ["(0, time)"]},
+        "y": {"label": "Rotation","type": "RIGID_BODY","ID": "gyro","array": ["(0, global_rdy)"]}
+    },{
+        "name": "RotationZ",
+        "part_of": "loadcell",
+        "x": {"label": "time","type": "RIGID_BODY","ID": "gyro","array": ["(0, time)"]},
+        "y": {"label": "Rotation","type": "RIGID_BODY","ID": "gyro","array": ["(0, global_rdz)"]}
+    }
+    ]
+    }
+]           
