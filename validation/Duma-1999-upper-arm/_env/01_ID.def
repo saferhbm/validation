@@ -1,0 +1,8 @@
+	{
+	"OBJECTS": [
+		{"type": "CONTACT", "name": "Impactor_to_Arm", "id": ["2m"]},  
+		{"type": "OBJECT", "name": "Strain_gauge", "id": [1640210]},
+		{"type": "BOUNDARY_CONDITION", "name": "rcf_prox", "id": [3]},
+		{"type": "BOUNDARY_CONDITION", "name": "rcf_dist", "id": [4]}   
+        ]
+	}
