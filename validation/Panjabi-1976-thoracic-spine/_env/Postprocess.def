@@ -1,0 +1,29 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			
+			{
+				"name": "force_non_filter_z",
+				"part_of": "Lower_Pot",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "bolt","array": ["(0, time)"]},
+				"y": {"label": "force","type": "BOUNDARY_CONDITION","ID": "bolt","array": ["(0, z_force)"]}
+
+			},
+			{
+				"name": "disp_non_filter_z",
+				"part_of": "Upper_Pot",
+				"x": {"label": "time","type": "RIGID_BODY","ID": "bolt","array": ["(0, time)"]},
+				"y": {"label": "Displacement","type": "RIGID_BODY","ID": "bolt","array": ["(0, global_dz)"]}
+
+			} 
+
+        ]
+    }
+]           
+             
