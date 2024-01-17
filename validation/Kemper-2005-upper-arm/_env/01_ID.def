@@ -1,0 +1,6 @@
+	{
+	"OBJECTS": [
+		{"type": "CONTACT", "name": "Impactor_to_Arm", "id": ["2m"]},
+		{"type": "NODE", "name": "Impactor", "id": [6841255]}    
+        ]
+	}
