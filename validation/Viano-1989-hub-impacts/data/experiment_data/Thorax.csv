@@ -1,0 +1,11 @@
+Thorax_LS:Force_D [kN];Thorax_LS:Deflection [cm];Thorax_LS:Force [kN];Thorax_LS:Time [ms];Thorax_MS:Force_D [kN];Thorax_MS:Deflection [cm];Thorax_MS:Force [kN];Thorax_MS:Time [ms];Thorax_HS:Force_D [kN];Thorax_HS:Deflection [cm];Thorax_HS:Force [kN];Thorax_HS:Time [ms]
+0;0;0;0;0;0;0;0;0;0;0;0
+3.2;5;3.2;10;3;3;3;5;7;5;7;6
+3.2;10;3.2;30;4;10;4;15;7;18;7;28
+;;1;60;4;12;4;30;;;4;40
+0;0;0;60;;;2;50;0;0;0;40
+1.5;7;1.5;35;0;0;0;50;5;11.5;5;25
+1.5;8;1.5;20;2;5;2.5;35;5;12.5;5;15
+;;0;0;2.3;8;2.5;13;;;0;0
+;;;;;;2;8;;;;
+;;;;;;0;0;;;;
