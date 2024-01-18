@@ -1,0 +1,41 @@
+$
+$ANSA_VERSION;23.1.2;
+$
+$
+$ file created by  A N S A  Thu Dec 21 16:13:59 2023
+$
+$ output from :
+$
+$ C:/Work/SOT/S11_validation/model/SAFER_11.0/recommended_control_cards/Untitled
+$ 
+$
+$ Settings :
+$
+$ Output format : R13
+$
+$ Output : All
+$
+$ANSA_USER_ATTRIBUTES;lumbar_strain_elements.k;INCLUDE;DM/Status;TEXT;WIP;
+$
+$
+$
+$
+$
+$
+$ANSA_COLOR;lumbar_strain_elements.k;INCLUDE;.968627452850342;.647058844566345;.
+$164705887436867;1.;
+*KEYWORD
+$ANSA_ID;1;
+*DATABASE_HISTORY_SOLID_SET
+$      ID1|
+   1702105
+*SET_SOLID_GENERAL_TITLE
+elements_for_IRC_lumbar
+   1702105          
+PART          801130    801230    801330    801430    801530
+$ANSA_NAME_COMMENT;1;DATABASE_HISTORY_SOLID_SET;DATABASE_HISTORY_SOLID_SET;;NO;N
+$O;NO;
+$ANSA_PART;PART;ID;1;NAME;Untitled;STUDY_VERSION;0;PID_OFFSET;0;COLOR;183;105;50
+$;0;IS_COLOR_ACTIVE;1;PART_TYPE;Undefined;ATTRIBUTES;2;DM/File Type;ANSA;DM/Stat
+$us;WIP;CONTAINS;DATABASE_HISTORY_SOLID_SET;1;
+*END

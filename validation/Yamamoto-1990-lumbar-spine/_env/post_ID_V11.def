@@ -1,0 +1,14 @@
+{
+"OBJECTS": 
+[
+	{"type": "NODE", "name": "L1", "id": [1564581]},
+	{"type": "NODE", "name": "L2", "id": [2046047]},
+	{"type": "NODE", "name": "L3", "id": [2047198]},
+	{"type": "NODE", "name": "L4", "id": [2048508]},
+	{"type": "NODE", "name": "L5", "id": [2049584]},
+	{"type": "NODE", "name": "S1", "id": [2060173]},
+	{"type": "BOUNDARY_CONDITION", "name": "upper_potting", "id": [22]},
+	{"type": "RIGID_BODY", "name": "gyro", "id": [22]},
+	{"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
+	]
+}

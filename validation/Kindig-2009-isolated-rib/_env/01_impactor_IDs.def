@@ -1,0 +1,9 @@
+	{
+	"OBJECTS": 
+	[
+		{"type": "BOUNDARY_CONDITION", "name": "posterior_pot", "id": [40]},     
+		{"type": "NODE", "name": "anterior", "id": [3589]},
+		{"type": "NODE", "name": "posterior", "id": [3592]},
+		{"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
+        ]
+	}

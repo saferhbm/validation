@@ -1,0 +1,70 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			
+			{
+				"name": "A_Disp_z",
+				"part_of": "potting",
+				"x": {"label": "time","type": "NODE","ID": "anterior","array": ["(0, time)"]},
+				"y": {"label": "displacement","type": "NODE","ID": "anterior","array": ["(0, z_displacement)"]}
+			},
+			{
+				"name": "P_Disp_z",
+				"part_of": "potting",
+				"x": {"label": "time","type": "NODE","ID": "posterior","array": ["(0, time)"]},
+				"y": {"label": "displacement","type": "NODE","ID": "posterior","array": ["(0, z_displacement)"]}
+			},
+			{
+				"name": "P_coor_z",
+				"part_of": "potting",
+				"x": {"label": "time","type": "NODE","ID": "posterior","array": ["(0, time)"]},
+				"y": {"label": "coordinate","type": "NODE","ID": "posterior","array": ["(0, z_coordinate)"]}
+			},
+			{
+				"name": "A_coor_z",
+				"part_of": "potting",
+				"x": {"label": "time","type": "NODE","ID": "anterior","array": ["(0, time)"]},
+				"y": {"label": "coordinate","type": "NODE","ID": "anterior","array": ["(0, z_coordinate)"]}
+			},
+			{
+				"name": "Force",
+				"part_of": "potting",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "posterior_pot","array": ["(0, time)"]},
+				"y": {
+						"function": {
+							"name": "res",
+							"param": {
+								"data_vector": {
+									"function": {
+										"name": "cfc",
+										"param": {
+											"cfc": 60,
+											"time": {
+												"type": "BOUNDARY_CONDITION",
+												"ID": "posterior_pot",
+												"array": ["(0, time)"]
+											},
+											"sampled_array": {
+												"type": "BOUNDARY_CONDITION",
+												"ID": "posterior_pot",
+												"array": ["(0, x_force)", "(0, y_force)", "(0, z_force)"]
+											}
+										}
+									}
+								}
+							}
+						},
+						"label": "force"
+					}
+			}
+			                     
+        ]
+    }
+]           
+             

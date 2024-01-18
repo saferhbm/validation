@@ -1,0 +1,20 @@
+{
+    "OBJECTS": 
+ [
+     {"type": "NODE", "name" : "Head-CoG-Accelerometer-global", "id" : [4900010]},
+     {"type": "NODE", "name" : "C1",            "id" : [4900110]},
+     {"type": "NODE", "name" : "C2",            "id" : [4900120]},
+     {"type": "NODE", "name" : "C3",            "id" : [4900130]},
+     {"type": "NODE", "name" : "C4",            "id" : [4900140]},
+     {"type": "NODE", "name" : "C5",            "id" : [4900150]},
+     {"type": "NODE", "name" : "C6",            "id" : [4900160]},
+     {"type": "NODE", "name" : "C7",            "id" : [4900170]},
+     {"type": "NODE", "name" : "T1",            "id" : [4900210]},
+     {"type": "NODE", "name" : "T6",            "id" : [4900260]},
+     {"type": "NODE", "name" : "T8",            "id" : [4900280]},
+     {"type": "NODE", "name" : "T11",           "id" : [4900310]},
+     {"type": "NODE", "name" : "L3",            "id" : [4900430]},
+     {"type": "NODE", "name" : "Sternum",       "id" : [4900720]},
+     {"type": "NODE", "name" : "Sternum_R1",    "id" : [4900710]}
+    ]
+}

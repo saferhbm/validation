@@ -1,0 +1,244 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "CRITERIA": [
+        {
+				"name": "Hourglass_Energy_Max",
+				"type_of_criteria": "energy",
+				"part_of": "MODEL",
+				"function": {
+					"name": "max",
+					"param": {
+						"data_vector": {
+							"type": "ENERGY_GLOBAL",
+							"ID": "Model",
+							"array": ["(0, hourglass_energy)"]
+						
+						}
+					}
+				}
+			},
+            {
+				"name": "Internal_Energy_Max",
+				"type_of_criteria": "energy",
+				"part_of": "MODEL",
+				"function": {
+					"name": "max",
+					"param": {
+						"data_vector": {
+							"type": "ENERGY_GLOBAL",
+							"ID": "Model",
+							"array": ["(0, internal_energy)"]
+						}
+						
+					}
+				}
+			},
+			{
+				"name": "Added_Mass_Max",
+				"type_of_criteria": "energy",
+				"part_of": "MODEL",
+				"function": {
+					"name": "max",
+					"param": {
+						"data_vector": {
+							"type": "ENERGY_GLOBAL",
+							"ID": "Model",
+							"array": ["(0, added_mass)"]
+						}
+					}
+				}
+			},
+			{
+				"name": "Percent_Increase_Max",
+				"type_of_criteria": "energy",
+				"part_of": "MODEL",
+				"function": {
+					"name": "max",
+					"param": {
+						"data_vector": {
+							"type": "ENERGY_GLOBAL",
+							"ID": "Model",
+							"array": ["(0, percent_increase)"]
+						}
+					}
+				}
+			},
+			{
+				"name": "Hourglass/Internal-Energy_Max",
+				"type_of_criteria": "energy",
+				"part_of": "MODEL",
+				"function": {
+					"name": "max",
+					"param": {
+						"data_vector": {
+							"function": {
+								"name": "div",
+								"param": {
+									"data_vector_1": {
+										"type": "ENERGY_GLOBAL",
+										"ID": "Model",
+										"array": ["(0, hourglass_energy)"]
+									},
+									"data_vector_2": {
+										"type": "ENERGY_GLOBAL",
+										"ID": "Model",
+										"array": ["(0, internal_energy)"]
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+      
+        ]
+    },
+    {
+        "DATA VISUALIZATION": [
+			{
+				"name": "Added_Mass",
+				"part_of": "MODEL",
+				"y": {
+					"label": "mass",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, added_mass)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "Total_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, total_energy)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "Internal_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, internal_energy)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "Kinetic_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, kinetic_energy)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "Hourglass_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, hourglass_energy)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "A_Disp_z",
+				"part_of": "potting",
+				"x": {"label": "time","type": "NODE","ID": "anterior","array": ["(0, time)"]},
+				"y": {"label": "displacement","type": "NODE","ID": "anterior","array": ["(0, z_displacement)"]}
+			},
+			{
+				"name": "P_Disp_z",
+				"part_of": "potting",
+				"x": {"label": "time","type": "NODE","ID": "posterior","array": ["(0, time)"]},
+				"y": {"label": "displacement","type": "NODE","ID": "posterior","array": ["(0, z_displacement)"]}
+			},
+			{
+				"name": "P_coor_z",
+				"part_of": "potting",
+				"x": {"label": "time","type": "NODE","ID": "posterior","array": ["(0, time)"]},
+				"y": {"label": "coordinate","type": "NODE","ID": "posterior","array": ["(0, z_coordinate)"]}
+			},
+			{
+				"name": "A_coor_z",
+				"part_of": "potting",
+				"x": {"label": "time","type": "NODE","ID": "anterior","array": ["(0, time)"]},
+				"y": {"label": "coordinate","type": "NODE","ID": "anterior","array": ["(0, z_coordinate)"]}
+			},
+			{
+				"name": "Force",
+				"part_of": "potting",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "posterior_pot","array": ["(0, time)"]},
+				"y": {
+						"function": {
+							"name": "res",
+							"param": {
+								"data_vector": {
+									"function": {
+										"name": "cfc",
+										"param": {
+											"cfc": 180,
+											"time": {
+												"type": "BOUNDARY_CONDITION",
+												"ID": "posterior_pot",
+												"array": ["(0, time)"]
+											},
+											"sampled_array": {
+												"type": "BOUNDARY_CONDITION",
+												"ID": "posterior_pot",
+												"array": ["(0, x_force)", "(0, y_force)", "(0, z_force)"]
+											}
+										}
+									}
+								}
+							}
+						},
+						"label": "force"
+					}
+			}
+			                     
+        ]
+    }
+]           
+             

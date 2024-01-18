@@ -1,0 +1,10 @@
+{
+"OBJECTS": 
+[
+	{"type": "RIGID_BODY", "name": "lower_potting", "id": [12]},
+	{"type": "BOUNDARY_CONDITION", "name": "lp_bc", "id": [12]},
+	{"type": "BOUNDARY_CONDITION", "name": "upper_potting", "id": [22]},
+	{"type": "RIGID_BODY", "name": "up_rb", "id": [22]},
+	{"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
+	]
+}
