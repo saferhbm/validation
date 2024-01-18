@@ -1,0 +1,29 @@
+	{
+	"OBJECTS": 
+	[
+		{"type": "OBJECT","name": "R1","id": 	[4760110]},
+		{"type": "OBJECT","name": "R2","id": 	[4760120]},
+		{"type": "OBJECT","name": "R3","id": 	[4760130]},
+		{"type": "OBJECT","name": "R4","id": 	[4760140]},
+		{"type": "OBJECT","name": "R5","id": 	[4760150]},
+		{"type": "OBJECT","name": "R6","id": 	[4760160]},
+		{"type": "OBJECT","name": "R7","id": 	[4760170]},
+		{"type": "OBJECT","name": "R8","id": 	[4760180]},
+		{"type": "OBJECT","name": "R9","id": 	[4760190]},
+		{"type": "OBJECT","name": "R10","id": 	[4760200]},
+		{"type": "OBJECT","name": "R11","id": 	[4760210]},
+		{"type": "OBJECT","name": "R12","id": 	[4760220]},
+		{"type": "OBJECT","name": "L1","id": 	[4710110]},
+		{"type": "OBJECT","name": "L2","id": 	[4710120]},
+		{"type": "OBJECT","name": "L3","id": 	[4710130]},
+		{"type": "OBJECT","name": "L4","id": 	[4710140]},
+		{"type": "OBJECT","name": "L5","id": 	[4710150]},
+		{"type": "OBJECT","name": "L6","id": 	[4710160]},
+		{"type": "OBJECT","name": "L7","id": 	[4710170]},
+		{"type": "OBJECT","name": "L8","id": 	[4710180]},
+		{"type": "OBJECT","name": "L9","id": 	[4710190]},
+		{"type": "OBJECT","name": "L10","id": 	[4710200]},
+		{"type": "OBJECT","name": "L11","id": 	[4710210]},
+		{"type": "OBJECT","name": "L12","id": 	[4710220]}
+    ]
+	}
