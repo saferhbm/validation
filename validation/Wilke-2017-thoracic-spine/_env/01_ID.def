@@ -1,0 +1,6 @@
+	{
+	"OBJECTS": [
+		{"type": "BOUNDARY_CONDITION", "name": "Lower_Pot", "id": [2300001]},
+		{"type": "RIGID_BODY", "name": "Upper_Pot", "id": [4300001]} 
+        ]
+	}
