@@ -1,0 +1,126 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			{
+				"name": "T1","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "T1","array": ["(0, time)"]},
+				"y": {"label": "displacement","type": "NODE","ID": "T1","array": ["(0, x_displacement)"]}
+			},{
+				"name": "Head","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "Head-CoG-Accelerometer-global","array": ["(0, time)"]},
+				"y": {"label": "displacement","type": "NODE","ID": "Head-CoG-Accelerometer-global","array": ["(0, x_displacement)"]}
+			},{
+				"name": "T1_ry","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "T1","array": ["(0, time)"]},
+				"y": {"label": "angle","type": "NODE","ID": "T1","array": ["(0, ry_displacement)"]}
+			},{
+				"name": "Head_ry","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "Head-CoG-Accelerometer-global","array": ["(0, time)"]},
+				"y": {"label": "angle","type": "NODE","ID": "Head-CoG-Accelerometer-global","array": ["(0, ry_displacement)"]}
+			},{
+				"name": "C2","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "C2","array": ["(0, time)"]},
+				"y": {"label": "angle","type": "NODE","ID": "C2","array": ["(0, ry_displacement)"]}
+			},{
+				"name": "C3","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "C3","array": ["(0, time)"]},
+				"y": {"label": "angle","type": "NODE","ID": "C3","array": ["(0, ry_displacement)"]}
+			},{
+				"name": "C4","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "C4","array": ["(0, time)"]},
+				"y": {"label": "angle","type": "NODE","ID": "C4","array": ["(0, ry_displacement)"]}
+			},{
+				"name": "C5","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "C5","array": ["(0, time)"]},
+				"y": {"label": "angle","type": "NODE","ID": "C5","array": ["(0, ry_displacement)"]}
+			},{
+				"name": "C6","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "C6","array": ["(0, time)"]},
+				"y": {"label": "angle","type": "NODE","ID": "C6","array": ["(0, ry_displacement)"]}
+			},{
+				"name": "C7","part_of": "Bone",
+				"x": {"label": "time","type": "NODE","ID": "C7","array": ["(0, time)"]},
+				"y": {"label": "angle","type": "NODE","ID": "C7","array": ["(0, ry_displacement)"]}
+			},{
+				"name": "C2CFC",
+				"part_of" : "Bone",
+				"y": {
+					"label": "angle","function": {"name": "cfc","param": {"cfc": 180,"time": {"type": "NODE","ID": "C2","array": ["(0, time)"]},
+							"sampled_array": {
+								"function": {
+											"name": "res",
+											"param": {"data_vector": {"type": "NODE","ID": "C2","array": ["(0, ry_displacement)"]}}
+											}}}
+										}},            
+				"x" : {"label": "time", "type": "NODE", "ID": "C2", "array": ["(0, time)"]}
+			},{
+				"name": "C3CFC",
+				"part_of" : "Bone",
+				"y": {
+					"label": "angle","function": {"name": "cfc","param": {"cfc": 180,"time": {"type": "NODE","ID": "C3","array": ["(0, time)"]},
+							"sampled_array": {
+								"function": {
+											"name": "res",
+											"param": {"data_vector": {"type": "NODE","ID": "C3","array": ["(0, ry_displacement)"]}}
+											}}}
+										}},            
+				"x" : {"label": "time", "type": "NODE", "ID": "C3", "array": ["(0, time)"]}
+			},{
+				"name": "C4CFC",
+				"part_of" : "Bone",
+				"y": {
+					"label": "angle","function": {"name": "cfc","param": {"cfc": 180,"time": {"type": "NODE","ID": "C4","array": ["(0, time)"]},
+							"sampled_array": {
+								"function": {
+											"name": "res",
+											"param": {"data_vector": {"type": "NODE","ID": "C4","array": ["(0, ry_displacement)"]}}
+											}}}
+										}},            
+				"x" : {"label": "time", "type": "NODE", "ID": "C4", "array": ["(0, time)"]}
+			},{
+				"name": "C5CFC",
+				"part_of" : "Bone",
+				"y": {
+					"label": "angle","function": {"name": "cfc","param": {"cfc": 180,"time": {"type": "NODE","ID": "C5","array": ["(0, time)"]},
+							"sampled_array": {
+								"function": {
+											"name": "res",
+											"param": {"data_vector": {"type": "NODE","ID": "C5","array": ["(0, ry_displacement)"]}}
+											}}}
+										}},            
+				"x" : {"label": "time", "type": "NODE", "ID": "C5", "array": ["(0, time)"]}
+			},{
+				"name": "C6CFC",
+				"part_of" : "Bone",
+				"y": {
+					"label": "angle","function": {"name": "cfc","param": {"cfc": 180,"time": {"type": "NODE","ID": "C6","array": ["(0, time)"]},
+							"sampled_array": {
+								"function": {
+											"name": "res",
+											"param": {"data_vector": {"type": "NODE","ID": "C6","array": ["(0, ry_displacement)"]}}
+											}}}
+										}},            
+				"x" : {"label": "time", "type": "NODE", "ID": "C6", "array": ["(0, time)"]}
+			},{
+				"name": "C7CFC",
+				"part_of" : "Bone",
+				"y": {
+					"label": "angle","function": {"name": "cfc","param": {"cfc": 180,"time": {"type": "NODE","ID": "C7","array": ["(0, time)"]},
+							"sampled_array": {
+								"function": {
+											"name": "res",
+											"param": {"data_vector": {"type": "NODE","ID": "C7","array": ["(0, ry_displacement)"]}}
+											}}}
+										}},            
+				"x" : {"label": "time", "type": "NODE", "ID": "C7", "array": ["(0, time)"]}
+			}
+        ]
+    }
+]           
+             
