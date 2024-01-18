@@ -1,0 +1,432 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			{
+			   "name":"accel_x",
+			   "part_of":"Head",
+			   "y":{
+				  "label":"acceleration",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, x_acceleration)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"NODE",
+				  "ID":"head",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			 {
+				 "name":"accel_z",
+				 "part_of":"Head",
+				 "y":{
+					"label":"acceleration",
+					"function":{
+					   "name":"cfc",
+					   "param":{
+						  "cfc":180,
+						  "time":{
+							 "type":"NODE",
+							 "ID":"head",
+							 "array":[
+								"(0, time)"
+							 ]
+						  },
+						  "sampled_array":{
+							 "type":"NODE",
+							 "ID":"head",
+							 "array":[
+								"(0, z_acceleration)"
+							 ]
+						  }
+					   }
+					}
+				 },
+				 "x":{
+					"label":"time",
+					"type":"NODE",
+					"ID":"head",
+					"array":[
+					   "(0, time)"
+					]
+				 }
+			  },
+			  {
+				  "name":"accel_y",
+				  "part_of":"Head",
+				  "y":{
+					 "label":"acceleration",
+					 "function":{
+						"name":"cfc",
+						"param":{
+						   "cfc":180,
+						   "time":{
+							  "type":"NODE",
+							  "ID":"head",
+							  "array":[
+								 "(0, time)"
+							  ]
+						   },
+						   "sampled_array":{
+							  "type":"NODE",
+							  "ID":"head",
+							  "array":[
+								 "(0, y_acceleration)"
+							  ]
+						   }
+						}
+					 }
+				  },
+				  "x":{
+					 "label":"time",
+					 "type":"NODE",
+					 "ID":"head",
+					 "array":[
+						"(0, time)"
+					 ]
+				  }
+			   },
+			{
+			   "name":"force_x",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"force",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, x_force)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"force_z",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"force",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, z_force)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"force_y",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"force",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, y_force)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"moment_y",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"moment",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":180,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, y_moment)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"moment_x",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"moment",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":180,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, x_moment)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"moment_z",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"moment",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":180,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, z_moment)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"rotation_y",
+			   "part_of":"Head",
+			   "y":{
+				  "label":"rotation",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":180,
+						"time":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, ry_displacement)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"NODE",
+				  "ID":"head",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"rotation_x",
+			   "part_of":"Head",
+			   "y":{
+				  "label":"rotation",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":180,
+						"time":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, rx_displacement)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"NODE",
+				  "ID":"head",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"rotation_z",
+			   "part_of":"Head",
+			   "y":{
+				  "label":"rotation",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":180,
+						"time":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, rz_displacement)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"NODE",
+				  "ID":"head",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			}
+        ]
+    }
+]           

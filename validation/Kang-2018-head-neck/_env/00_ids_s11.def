@@ -1,0 +1,12 @@
+	{
+	"OBJECTS": 
+	[
+		{"type": "CROSS_SECTION", "name": "pot_plane", "id": [10000001]},
+		{"type": "CROSS_SECTION", "name": "lower_neck", "id": [1710700]},
+		{"type": "NODE", "name": "head", "id": [4900010]},
+		{"type": "BOUNDARY_CONDITION", "name": "ring", "id": [10000001]},
+		{"type": "BOUNDARY_CONDITION", "name": "sled", "id": [10000002]},
+		{"type": "RIGID_BODY", "name": "base", "id": [10000002]},
+		{"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
+        ]
+	}

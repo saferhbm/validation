@@ -1,0 +1,40 @@
+[    {
+        "DATA VISUALIZATION": [
+			{
+			   "name":"Torsion",
+			   "part_of":"Neck",
+			   "y":{
+				  "label":"tosion",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"lower_neck",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"lower_neck",
+						   "array":[
+							  "(0, z_moment)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"lower_neck",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			}
+        ]
+    }
+]           

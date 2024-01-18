@@ -1,0 +1,215 @@
+[
+{
+    "DATA VISUALIZATION": [
+        {
+           "name":"force_x",
+           "part_of":"turnbuckle",
+           "y":{
+              "label":"force",
+              "function":{
+                 "name":"cfc",
+                 "param":{
+                    "cfc":60,
+                    "time":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, time)"
+                       ]
+                    },
+                    "sampled_array":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, x_force)"
+                       ]
+                    }
+                 }
+              }
+           },
+           "x":{
+              "label":"time",
+              "type":"BOUNDARY_CONDITION",
+              "ID":"ring",
+              "array":[
+                 "(0, time)"
+              ]
+           }
+        },{
+         "name":"force_y",
+         "part_of":"turnbuckle",
+         "y":{
+            "label":"force",
+            "function":{
+               "name":"cfc",
+               "param":{
+                  "cfc":60,
+                  "time":{
+                     "type":"BOUNDARY_CONDITION",
+                     "ID":"ring",
+                     "array":[
+                        "(0, time)"
+                     ]
+                  },
+                  "sampled_array":{
+                     "type":"BOUNDARY_CONDITION",
+                     "ID":"ring",
+                     "array":[
+                        "(0, y_force)"
+                     ]
+                  }
+               }
+            }
+         },
+         "x":{
+            "label":"time",
+            "type":"BOUNDARY_CONDITION",
+            "ID":"ring",
+            "array":[
+               "(0, time)"
+            ]
+         }
+      },
+        {
+           "name":"force_z",
+           "part_of":"turnbuckle",
+           "y":{
+              "label":"force",
+              "function":{
+                 "name":"cfc",
+                 "param":{
+                    "cfc":60,
+                    "time":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, time)"
+                       ]
+                    },
+                    "sampled_array":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, z_force)"
+                       ]
+                    }
+                 }
+              }
+           },
+           "x":{
+              "label":"time",
+              "type":"BOUNDARY_CONDITION",
+              "ID":"ring",
+              "array":[
+                 "(0, time)"
+              ]
+           }
+        },
+        {
+           "name":"moment_y",
+           "part_of":"turnbuckle",
+           "y":{
+              "label":"moment",
+              "function":{
+                 "name":"cfc",
+                 "param":{
+                    "cfc":180,
+                    "time":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, time)"
+                       ]
+                    },
+                    "sampled_array":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, ymoment)"
+                       ]
+                    }
+                 }
+              }
+           },
+           "x":{
+              "label":"time",
+              "type":"BOUNDARY_CONDITION",
+              "ID":"ring",
+              "array":[
+                 "(0, time)"
+              ]
+           }
+        },
+        {
+           "name":"moment_x",
+           "part_of":"turnbuckle",
+           "y":{
+              "label":"moment",
+              "function":{
+                 "name":"cfc",
+                 "param":{
+                    "cfc":180,
+                    "time":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, time)"
+                       ]
+                    },
+                    "sampled_array":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, xmoment)"
+                       ]
+                    }
+                 }
+              }
+           },
+           "x":{
+              "label":"time",
+              "type":"BOUNDARY_CONDITION",
+              "ID":"ring",
+              "array":[
+                 "(0, time)"
+              ]
+           }
+        },
+        {
+           "name":"moment_z",
+           "part_of":"turnbuckle",
+           "y":{
+              "label":"moment",
+              "function":{
+                 "name":"cfc",
+                 "param":{
+                    "cfc":180,
+                    "time":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, time)"
+                       ]
+                    },
+                    "sampled_array":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"ring",
+                       "array":[
+                          "(0, zmoment)"
+                       ]
+                    }
+                 }
+              }
+           },
+           "x":{
+              "label":"time",
+              "type":"BOUNDARY_CONDITION",
+              "ID":"ring",
+              "array":[
+                 "(0, time)"
+              ]
+           }
+        }
+    ]
+}
+]           
