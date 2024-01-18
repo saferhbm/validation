@@ -1,0 +1,81 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			
+			{
+				"name": "Force",
+				"part_of": "Impactor",
+				"x": {"label": "time","type": "CONTACT","ID": "Impactor_to_Arm","array": ["(0, time)"]},
+				"y": {
+						"function": {
+							"name": "res",
+							"param": {
+								"data_vector": {
+									"function": {
+										"name": "cfc",
+										"param": {
+											"cfc": 1000,
+											"time": {
+												"type": "CONTACT",
+												"ID": "Impactor_to_Arm",
+												"array": ["(0, time)"]
+											},
+											"sampled_array": {
+												"type": "CONTACT",
+												"ID": "Impactor_to_Arm",
+												"array": ["(0, z_force)"]
+											}
+										}
+									}
+								}
+							}
+						},
+						"label": "force"
+					}
+			},
+			{
+				"name": "Force_non_filter",
+				"part_of": "Impactor",
+				"x": {"label": "time","type": "CONTACT","ID": "Impactor_to_Arm","array": ["(0, time)"]},
+				"y": {"label": "force","type": "CONTACT","ID": "Impactor_to_Arm","array": ["(0, z_force)"]}
+
+			},
+			{
+				"name": "Force_non_filter",
+				"part_of": "Pot_prox",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "rcf_prox","array": ["(0, time)"]},
+				"y": {"label": "force","type": "BOUNDARY_CONDITION","ID": "rcf_prox","array": ["(0, z_force)"]}
+
+			},
+			{
+				"name": "Force_non_filter",
+				"part_of": "Pot_dist",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "rcf_dist","array": ["(0, time)"]},
+				"y": {"label": "force","type": "BOUNDARY_CONDITION","ID": "rcf_dist","array": ["(0, z_force)"]}
+
+			},
+			{
+                "name": "Compression_strain_gauge",
+                "part_of": "Humerus_cortical",
+                "x": {"label": "time", "function": {"name": "object_time","param": {"object_data": {"type": "OBJECT","ID": "Strain_gauge","strain_stress": "Strain"}}}},
+                "y": {"label": "strain", "function": {"name": "stress_strain_time_history","param": {"object_data": {"type": "OBJECT","ID": "Strain_gauge","strain_stress": "Strain"},"integration_point": "Mean","selection_tension_compression": "Compression","percentile": 100, "interpolation": "linear"}}}
+			},
+			{
+                "name": "Tension_strain_gauge",
+                "part_of": "Humerus_cortical",
+                "x": {"label": "time", "function": {"name": "object_time","param": {"object_data": {"type": "OBJECT","ID": "Strain_gauge","strain_stress": "Strain"}}}},
+                "y": {"label": "strain", "function": {"name": "stress_strain_time_history","param": {"object_data": {"type": "OBJECT","ID": "Strain_gauge","strain_stress": "Strain"},"integration_point": "Mean","selection_tension_compression": "Tension","percentile": 100, "interpolation": "linear"}}}
+			}
+			
+			
+			                     
+        ]
+    }
+]           
+             

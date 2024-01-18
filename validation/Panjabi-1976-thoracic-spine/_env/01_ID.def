@@ -1,0 +1,6 @@
+	{
+	"OBJECTS": [
+		{"type": "BOUNDARY_CONDITION", "name": "bolt", "id": [2300001]},
+		{"type": "RIGID_BODY", "name": "bolt", "id": [6300001]} 
+        ]
+	}
