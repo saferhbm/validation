@@ -3,13 +3,7 @@
  ```{admonition} Draft report
 :class: warning 
 
-This document has results for ![Static Badge](https://img.shields.io/badge/SAFER_HBM-9.0-1?style=flat&logoColor=blue&labelColor=whitw&color=yellow) ![Static Badge](https://img.shields.io/badge/SAFER_HBM-10.0-1?style=flat&logoColor=blue&labelColor=whitw&color=green) ![Static Badge](https://img.shields.io/badge/SAFER_HBM-11.0-1?style=flat&logoColor=blue&labelColor=whitw&color=blue)
-```
-
-## Documentation structure
-
-```{image} sections/structure.PNG
-:align: center
+This document has results for ![Static Badge](https://img.shields.io/badge/SAFER_HBM-11.0-1?style=flat&logoColor=blue&labelColor=whitw&color=blue)
 ```
 
 ## List for Component validations
