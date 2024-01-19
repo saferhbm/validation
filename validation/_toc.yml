@@ -6,6 +6,10 @@ root: main
 parts:
   - caption: Submodels
     chapters:
+    - file: sections/Head Neck
+      sections:
+      - file: Stemper-2004-head-neck/SAFER_11.0/stemper-2004
+      - file: Kang-2018-head-neck/SAFER_11.0/Kang-2018
     - file: sections/Upper Extremity
       sections:
       - file: Duma-1999-upper-arm/SAFER 11.0/Duma-1999-upper-arm-SAFEFR11
@@ -13,6 +17,7 @@ parts:
     - file: sections/Thoracic Spine
       sections:
       - file: Panjabi-1976-thoracic-spine/SAFER 11.0/Panjabi-1976-Thoracic-SAFEFR11
+      - file: Wilke-2017-thoracic-spine/SAFER 11.0/Wilke-2017-Thoracic-SAFEFR11
     - file: sections/Thorax
       sections:
       - file: Kang-2020-isolated-rib/SAFER_11.0/Kang-2020
@@ -26,6 +31,11 @@ parts:
       - file: Ivarsson-2009-femur-shaft/SAFER_11.0/Ivarsson-2009
   - caption: Full body - Passive
     chapters:
+    - file: sections/Front Impact
+      sections:
+      - file: Shaw-2009-gold-standard-1/SAFER_11.0/GS1-2009-BC_kinematic-plots
+      - file: Kent-2004-table-top/SAFER_11.0/Kent-2003-tabletop
+      - file: lebarbe-2012-frontal-hub/SAFER_11.0/lebarbe
     - file: sections/Side Impact
       sections:
       - file: Viano-1989-hub-impacts/SAFER_11.0/Viano-1989
