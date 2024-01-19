@@ -1,0 +1,57 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			
+			{
+				"name": "Moment_non_filter_z",
+				"part_of": "Lower_Pot",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "Lower_Pot","array": ["(0, time)"]},
+				"y": {"label": "moment","type": "BOUNDARY_CONDITION","ID": "Lower_Pot","array": ["(0, zmoment)"]}
+
+			},
+			{
+				"name": "Moment_non_filter_y",
+				"part_of": "Lower_Pot",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "Lower_Pot","array": ["(0, time)"]},
+				"y": {"label": "moment","type": "BOUNDARY_CONDITION","ID": "Lower_Pot","array": ["(0, ymoment)"]}
+
+			},
+			{
+				"name": "Moment_non_filter_x",
+				"part_of": "Lower_Pot",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "Lower_Pot","array": ["(0, time)"]},
+				"y": {"label": "moment","type": "BOUNDARY_CONDITION","ID": "Lower_Pot","array": ["(0, xmoment)"]}
+
+			},
+			{
+				"name": "angle_non_filter_z",
+				"part_of": "Upper_Pot",
+				"x": {"label": "time","type": "RIGID_BODY","ID": "Upper_Pot","array": ["(0, time)"]},
+				"y": {"label": "Angle","type": "RIGID_BODY","ID": "Upper_Pot","array": ["(0, global_rdz)"]}
+
+			},
+			{
+				"name": "angle_non_filter_y",
+				"part_of": "Upper_Pot",
+				"x": {"label": "time","type": "RIGID_BODY","ID": "Upper_Pot","array": ["(0, time)"]},
+				"y": {"label": "Angle","type": "RIGID_BODY","ID": "Upper_Pot","array": ["(0, global_rdy)"]}
+
+			},
+			{
+				"name": "angle_non_filter_x",
+				"part_of": "Upper_Pot",
+				"x": {"label": "time","type": "RIGID_BODY","ID": "Upper_Pot","array": ["(0, time)"]},
+				"y": {"label": "Angle","type": "RIGID_BODY","ID": "Upper_Pot","array": ["(0, global_rdx)"]}
+
+			}  
+
+        ]
+    }
+]           
+             

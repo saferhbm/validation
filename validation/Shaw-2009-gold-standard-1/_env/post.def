@@ -1,0 +1,1022 @@
+[{
+    "UNIT": {
+        "time": "ms",
+        "length": "mm",
+        "mass": "kg"
+    }
+},{
+    "DATA VISUALIZATION": [
+        {
+            "name": "Belt_force_Shoulder_upper",
+            "part_of": "BELT",
+            "x": {
+                "label": "time",
+                "type": "SEAT_BELT",
+                "ID": "Upper_shoulder",
+                "array": ["(0, time)"]
+            },
+            "y": {
+                "label": "force",
+                "type": "SEAT_BELT",
+                "ID": "Upper_shoulder",
+                "array": ["(0, belt_force)"]
+            }
+        },
+        {
+            "name": "Belt_force_Lap",
+            "part_of": "BELT",
+            "x": {
+                "label": "time",
+                "type": "SEAT_BELT",
+                "ID": "Outer_lap",
+                "array": ["(0, time)"]
+            },
+            "y": {
+                "label": "force",
+                "type": "SEAT_BELT",
+                "ID": "Outer_lap",
+                "array": ["(0, belt_force)"]
+            }
+        },
+        {
+            "name": "Belt_force_Shoulder_lower",
+            "part_of": "BELT",
+            "x": {
+                "label": "time",
+                "type": "SEAT_BELT",
+                "ID": "Lower_shoulder",
+                "array": ["(0, time)"]
+            },
+            "y": {
+                "label": "force",
+                "type": "SEAT_BELT",
+                "ID": "Lower_shoulder",
+                "array": ["(0, belt_force)"]
+            }
+        },
+                {
+                    "name": "Contactforce_seat_CFC_180_x",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Seat_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Seat_m",
+                                    "array": [
+                                        "(0, x_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_seat_CFC_180_z",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 600,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Seat_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Seat_m",
+                                    "array": [
+                                        "(0, z_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_left_knee_CFC_180_x",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Left_knee_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Left_knee_m",
+                                    "array": [
+                                        "(0, x_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_left_knee_CFC_180_z",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Left_knee_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Left_knee_m",
+                                    "array": [
+                                        "(0, z_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_Right_knee_CFC_180_x",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Right_knee_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Right_knee_m",
+                                    "array": [
+                                        "(0, x_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_Right_knee_CFC_180_z",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Right_knee_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Right_knee_m",
+                                    "array": [
+                                        "(0, z_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_Left_foot_CFC_180_x",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Left_Foot_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Left_Foot_m",
+                                    "array": [
+                                        "(0, x_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_foot_Res_L",
+                    "part_of": "BC",
+                    "x": {"label": "time","type": "CONTACT","ID": "Left_Foot_m","array": ["(0, time)"]},
+                    "y": {
+                            "function": {
+                                "name": "res",
+                                "param": {
+                                    "data_vector": {
+                                        "function": {
+                                            "name": "cfc",
+                                            "param": {
+                                                "cfc": 180,
+                                                "time": {
+                                                    "type": "CONTACT",
+                                                    "ID": "Left_Foot_m",
+                                                    "array": ["(0, time)"]
+                                                },
+                                                "sampled_array": {
+                                                    "type": "CONTACT",
+                                                    "ID": "Left_Foot_m",
+                                                    "array": ["(0, x_force)", "(0, y_force)", "(0, z_force)"]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "label": "force"
+                        }
+                },
+                {
+                    "name": "Contactforce_foot_Res_R",
+                    "part_of": "BC",
+                    "x": {"label": "time","type": "CONTACT","ID": "Right_Foot_m","array": ["(0, time)"]},
+                    "y": {
+                            "function": {
+                                "name": "res",
+                                "param": {
+                                    "data_vector": {
+                                        "function": {
+                                            "name": "cfc",
+                                            "param": {
+                                                "cfc": 180,
+                                                "time": {
+                                                    "type": "CONTACT",
+                                                    "ID": "Right_Foot_m",
+                                                    "array": ["(0, time)"]
+                                                },
+                                                "sampled_array": {
+                                                    "type": "CONTACT",
+                                                    "ID": "Right_Foot_m",
+                                                    "array": ["(0, x_force)", "(0, y_force)", "(0, z_force)"]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "label": "force"
+                        }
+                },
+                {
+                    "name": "Contactforce_Left_foot_CFC_180_z",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Left_Foot_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Left_Foot_m",
+                                    "array": [
+                                        "(0, z_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_Right_foot_CFC_180_x",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Right_Foot_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Right_Foot_m",
+                                    "array": [
+                                        "(0, x_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Contactforce_Right_foot_CFC_180_z",
+                    "part_of" : "BC",
+                    "y": {
+                        "label": "force",
+                        "function": {
+                            "name": "cfc",
+                            "param": {
+                                "cfc": 180,
+                                "time": {
+                                    "type": "CONTACT",
+                                    "ID": "Right_Foot_m",
+                                    "array": [
+                                        "(0, time)"
+                                    ]
+                                },
+                                "sampled_array": {
+                                    "type": "CONTACT",
+                                    "ID": "Right_Foot_m",
+                                    "array": [
+                                        "(0, z_force)"
+                                             ]
+                                }
+                            }
+                        }
+                    },
+                    
+                    "x" : {"label": "time", "type": "CONTACT", "ID": "Seat_m", "array": ["(0, time)"]}
+                },
+                {
+                    "name": "Sled_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Sled",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Sled",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "Head_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Head",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Head",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "Head_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Head",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Head",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "Head_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Head",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Head",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "T1_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "T1",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "T1",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "T1_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "T1",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "T1",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "T1_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "T1",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "T1",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "T8_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "T8",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "T8",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "T8_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "T8",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "T8",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "T8_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "T8",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "T8",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "L2_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L2",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L2",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "L2_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L2",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L2",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "L2_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L2",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L2",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "L4_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L4",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L4",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "L4_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L4",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L4",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "L4_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L4",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L4",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "Pelvis_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Pelvis",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Pelvis",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "Pelvis_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Pelvis",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Pelvis",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "Pelvis_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Pelvis",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Pelvis",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "R_shoulder_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "R_shoulder",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "R_shoulder",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "R_shoulder_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "R_shoulder",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "R_shoulder",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "R_shoulder_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "R_shoulder",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "R_shoulder",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "L_shoulder_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L_shoulder",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L_shoulder",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "L_shoulder_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L_shoulder",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L_shoulder",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "L_shoulder_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "L_shoulder",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "L_shoulder",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "Sternum_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Sternum",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Sternum",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "Sternum_Disp_y",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Sternum",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Sternum",
+                        "array": ["(0, y_displacement)"]
+                    }
+                },
+                {
+                    "name": "Sternum_Disp_z",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Sternum",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Sternum",
+                        "array": ["(0, z_displacement)"]
+                    }
+                },
+                {
+                    "name": "Upper_right_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Upper_right",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Upper_right",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "Upper_left_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Upper_left",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Upper_left",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "Lower_right_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Lower_right",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Lower_right",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },
+                {
+                    "name": "Lower_left_Disp_x",
+                    "part_of": "SLED",
+                    "x": {
+                        "label": "time",
+                        "type": "NODE",
+                        "ID": "Lower_left",
+                        "array": ["(0, time)"]
+                    },
+                    "y": {
+                        "label": "displacement",
+                        "type": "NODE",
+                        "ID": "Lower_left",
+                        "array": ["(0, x_displacement)"]
+                    }
+                },{
+				"name": "Added_Mass",
+				"part_of": "MODEL",
+				"y": {
+					"label": "mass",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, added_mass)"
+					]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, time)"
+					]
+				}
+			},
+			{
+				"name": "Total_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, total_energy)"
+					]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, time)"
+					]
+				}
+			},
+			{
+				"name": "Internal_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, internal_energy)"
+					]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, time)"
+					]
+				}
+			},
+			{
+				"name": "Kinetic_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, kinetic_energy)"
+					]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, time)"
+					]
+				}
+			},
+			{
+				"name": "Hourglass_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, hourglass_energy)"
+					]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": [
+						"(0, time)"
+					]
+				}
+			}
+        ]
+    }
+    ]

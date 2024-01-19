@@ -1,0 +1,22 @@
+	{
+		"OBJECTS" : [
+			{"type": "SEAT_BELT", "name" : "Upper_shoulder", "id" :[91002098]},
+			{"type": "SEAT_BELT", "name" : "Lower_shoulder", "id" :[91002100]},
+			{"type": "NODE", "name" : "Sled", "id" : [90001001]},
+			{"type": "NODE", "name" : "Head", "id" : [8900010]},
+			{"type": "NODE", "name" : "Sternum", "id" : [99010001]},
+			{"type": "NODE", "name" : "Upper_right", "id" : [99010003]},
+			{"type": "NODE", "name" : "Upper_left", "id" : [99010002]},
+			{"type": "NODE", "name" : "Lower_right", "id" : [99010005]},
+			{"type": "NODE", "name" : "Lower_left", "id" : [99010004]},
+			{"type": "NODE", "name" : "T1", "id" : [8900210]},
+			{"type": "NODE", "name" : "T8", "id" : [8900280]},
+			{"type": "NODE", "name" : "L2", "id" : [8900420]},
+			{"type": "NODE", "name" : "L4", "id" : [8900440]},
+			{"type": "NODE", "name" : "Pelvis", "id" : [8900510]},
+			{"type": "NODE", "name" : "R_shoulder", "id" : [8900640]},
+			{"type": "NODE", "name" : "L_shoulder", "id" : [8900251]},
+			{"type": "ENERGY_GLOBAL", "name": "Model", "id": [0]}
+			]
+		}
+		
