@@ -1,0 +1,103 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+       "DATA VISUALIZATION":[
+          {
+             "name":"Contactforce_z_table_to_HBM_torso_CFC_180",
+             "part_of":"IMPACTOR",
+             "y":{
+                "label":"force",
+                "function":{
+                   "name":"cfc",
+                   "param":{
+                      "cfc":180,
+                      "time":{
+                         "type":"CONTACT",
+                         "ID":"Table-to-HBM-torso-m",
+                         "array":[
+                            "(0, time)"
+                         ]
+                      },
+                      "sampled_array":{
+                         "type":"CONTACT",
+                         "ID":"Table-to-HBM-torso-m",
+                         "array":[
+                            "(0, z_force)"
+                         ]
+                      }
+                   }
+                }
+             },
+             "x":{
+                "label":"time",
+                "type":"CONTACT",
+                "ID":"Table-to-HBM-torso-m",
+                "array":[
+                   "(0, time)"
+                ]
+             }
+          },
+          {
+             "name":"Contactforce_Table_to_HBM_torso_CFC_600",
+             "part_of":"IMPACTOR",
+             "y":{
+                "label":"force",
+                "function":{
+                   "name":"cfc",
+                   "param":{
+                      "cfc":600,
+                      "time":{
+                         "type":"CONTACT",
+                         "ID":"Table-to-HBM-torso-m",
+                         "array":[
+                            "(0, time)"
+                         ]
+                      },
+                      "sampled_array":{
+                         "type":"CONTACT",
+                         "ID":"Table-to-HBM-torso-m",
+                         "array":[
+                            "(0, z_force)"
+                         ]
+                      }
+                   }
+                }
+             },
+             "x":{
+                "label":"time",
+                "type":"CONTACT",
+                "ID":"Table-to-HBM-torso-m",
+                "array":[
+                   "(0, time)"
+                ]
+             }
+          },
+          {
+             "name":"Chest_deflection_vs_time",
+             "part_of":"IMPACTOR",
+             "x":{
+                "label":"time",
+                "type":"DISCRETE",
+                "ID":"Chest_Deflection",
+                "array":[
+                   "(0, time)"
+                ]
+             },
+             "y":{
+                "label":"displacement",
+                "type":"DISCRETE",
+                "ID":"Chest_Deflection",
+                "array":[
+                   "(0, displacement)"
+                ]
+             }
+          }
+       ]
+    }
+]           
+             
