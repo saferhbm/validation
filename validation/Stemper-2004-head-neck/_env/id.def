@@ -1,0 +1,6 @@
+{
+	"OBJECTS": 
+	[
+        {"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
+        ]
+	}

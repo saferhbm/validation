@@ -1,0 +1,287 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			{
+			   "name":"accel_x",
+			   "part_of":"Head",
+			   "y":{
+				  "label":"acceleration",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, x_acceleration)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"NODE",
+				  "ID":"head",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			 {
+				 "name":"accel_z",
+				 "part_of":"Head",
+				 "y":{
+					"label":"acceleration",
+					"function":{
+					   "name":"cfc",
+					   "param":{
+						  "cfc":180,
+						  "time":{
+							 "type":"NODE",
+							 "ID":"head",
+							 "array":[
+								"(0, time)"
+							 ]
+						  },
+						  "sampled_array":{
+							 "type":"NODE",
+							 "ID":"head",
+							 "array":[
+								"(0, z_acceleration)"
+							 ]
+						  }
+					   }
+					}
+				 },
+				 "x":{
+					"label":"time",
+					"type":"NODE",
+					"ID":"head",
+					"array":[
+					   "(0, time)"
+					]
+				 }
+			  },
+			{
+			   "name":"force_x",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"force",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, x_force)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"force_y",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"force",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, y_force)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"force_z",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"force",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":60,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, z_force)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"moment_y",
+			   "part_of":"loadcell",
+			   "y":{
+				  "label":"moment",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":180,
+						"time":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"CROSS_SECTION",
+						   "ID":"pot_plane",
+						   "array":[
+							  "(0, y_moment)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"CROSS_SECTION",
+				  "ID":"pot_plane",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},
+			{
+			   "name":"rotation_y",
+			   "part_of":"Head",
+			   "y":{
+				  "label":"force",
+				  "function":{
+					 "name":"cfc",
+					 "param":{
+						"cfc":180,
+						"time":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, time)"
+						   ]
+						},
+						"sampled_array":{
+						   "type":"NODE",
+						   "ID":"head",
+						   "array":[
+							  "(0, ry_displacement)"
+						   ]
+						}
+					 }
+				  }
+			   },
+			   "x":{
+				  "label":"time",
+				  "type":"NODE",
+				  "ID":"head",
+				  "array":[
+					 "(0, time)"
+				  ]
+			   }
+			},{
+				"name": "F2L",
+				"part_of": "Turnbuckle",
+				"x": {"label": "time","type": "ELEMENT","ID": "tb1","array": ["(0, time)"]},
+				"y": {"label": "disp","type": "ELEMENT","ID": "tb1","array": ["(0, axial)"]}
+			},{
+				"name": "F2R",
+				"part_of": "Turnbuckle",
+				"x": {"label": "time","type": "ELEMENT","ID": "tb2","array": ["(0, time)"]},
+				"y": {"label": "disp","type": "ELEMENT","ID": "tb2","array": ["(0, axial)"]}
+			},{
+				"name": "F1R",
+				"part_of": "Turnbuckle",
+				"x": {"label": "time","type": "ELEMENT","ID": "tb3","array": ["(0, time)"]},
+				"y": {"label": "disp","type": "ELEMENT","ID": "tb3","array": ["(0, axial)"]}
+			},{
+				"name": "F1L",
+				"part_of": "Turnbuckle",
+				"x": {"label": "time","type": "ELEMENT","ID": "tb4","array": ["(0, time)"]},
+				"y": {"label": "disp","type": "ELEMENT","ID": "tb4","array": ["(0, axial)"]}
+			},{
+				"name": "F3L",
+				"part_of": "Turnbuckle",
+				"x": {"label": "time","type": "ELEMENT","ID": "tb5","array": ["(0, time)"]},
+				"y": {"label": "disp","type": "ELEMENT","ID": "tb5","array": ["(0, axial)"]}
+			},{
+				"name": "F3R",
+				"part_of": "Turnbuckle",
+				"x": {"label": "time","type": "ELEMENT","ID": "tb6","array": ["(0, time)"]},
+				"y": {"label": "disp","type": "ELEMENT","ID": "tb6","array": ["(0, axial)"]}
+			}
+        ]
+    }
+]           

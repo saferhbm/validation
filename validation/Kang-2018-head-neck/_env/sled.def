@@ -1,0 +1,76 @@
+[
+{
+    "DATA VISUALIZATION": [
+        {
+           "name":"rotation_z",
+           "part_of":"Sled",
+           "y":{
+              "label":"force",
+              "function":{
+                 "name":"cfc",
+                 "param":{
+                    "cfc":180,
+                    "time":{
+                       "type":"RIGID_BODY",
+                       "ID":"base",
+                       "array":[
+                          "(0, time)"
+                       ]
+                    },
+                    "sampled_array":{
+                       "type":"RIGID_BODY",
+                       "ID":"base",
+                       "array":[
+                          "(0, global_rdz)"
+                       ]
+                    }
+                 }
+              }
+           },
+           "x":{
+              "label":"time",
+              "type":"RIGID_BODY",
+              "ID":"base",
+              "array":[
+                 "(0, time)"
+              ]
+           }
+        },
+        {
+           "name":"moment_z",
+           "part_of":"Sled",
+           "y":{
+              "label":"moment",
+              "function":{
+                 "name":"cfc",
+                 "param":{
+                    "cfc":180,
+                    "time":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"sled",
+                       "array":[
+                          "(0, time)"
+                       ]
+                    },
+                    "sampled_array":{
+                       "type":"BOUNDARY_CONDITION",
+                       "ID":"sled",
+                       "array":[
+                          "(0, zmoment)"
+                       ]
+                    }
+                 }
+              }
+           },
+           "x":{
+              "label":"time",
+              "type":"BOUNDARY_CONDITION",
+              "ID":"sled",
+              "array":[
+                 "(0, time)"
+              ]
+           }
+        }
+    ]
+}
+]           
