@@ -10,6 +10,10 @@ parts:
       sections:
       - file: Stemper-2004-head-neck/SAFER_11.0/stemper-2004
       - file: Kang-2018-head-neck/SAFER_11.0/Kang-2018
+    - file: sections/Cervical Spine
+      sections:
+      - file: Nightingale-2007-cervical-spine/SAFER_11.0/Nightingale-2007
+      - file: Panjabi-2001-cervical-spine/SAFER_11.0/Panjabi-2001
     - file: sections/Upper Extremity
       sections:
       - file: Duma-1999-upper-arm/SAFER 11.0/Duma-1999-upper-arm-SAFEFR11

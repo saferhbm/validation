@@ -22,7 +22,7 @@ only_build_toc_files: true # Only build the files mentioned in the ToC
 #   - references.bib
 
 html:
-  # announcement: "Draft report"
+  announcement: " ⚠️ Work in Progress ⚠️"
   html_theme : "sphinx_book_theme"
   home_page_in_navbar: True
   # extensions : "jupyterhub_sphinx_theme"
