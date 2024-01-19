@@ -1,0 +1,55 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			{
+				"name": "Rot_y",
+				"part_of": "Potting",
+				"x": {"label": "time","type": "RIGID_BODY","ID": "actuator","array": ["(0, time)"]},
+				"y": {"function": { "name": "res","param": {"data_vector": {"function": {"name": "cfc",
+								"param": {
+										"cfc": 600,
+										"time": {"type": "RIGID_BODY","ID": "actuator","array": ["(0, time)"]},
+										"sampled_array": {"type": "RIGID_BODY","ID": "actuator","array": ["(0, global_rdy)"]}
+										}}}}},
+						"label": "angle"}
+			},{
+				"name": "Mom_y",
+				"part_of": "Potting",
+				"x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "upper_potting","array": ["(0, time)"]},
+				"y": {
+						"function": {
+							"name": "res",
+							"param": {
+								"data_vector": {
+									"function": {
+										"name": "cfc",
+										"param": {
+											"cfc": 600,
+											"time": {
+												"type": "BOUNDARY_CONDITION",
+												"ID": "upper_potting",
+												"array": ["(0, time)"]
+											},
+											"sampled_array": {
+												"type": "BOUNDARY_CONDITION",
+												"ID": "upper_potting",
+												"array": ["(0, ymoment)"]
+											}
+										}
+									}
+								}
+							}
+						},
+						"label": "moment"
+					}
+			}
+        ]
+    }
+]           
+             
