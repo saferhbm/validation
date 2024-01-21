@@ -371,18 +371,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#safer-hbm-version-11-0">SAFER HBM Version: <code class="docutils literal notranslate"><span class="pre">11.0</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-and-prerequisites">Setup and prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-declaration">Variable declaration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocessing-with-dynasaur">Postprocessing with dynasaur</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extracting-time-series">Extracting Time Series</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-the-expriment-data">Input the expriment data</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocessing-with-dynasaur">Postprocessing with dynasaur</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#axial-moment">Axial Moment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flexion-extension-moment">Flexion/Extension Moment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lateral-moment">Lateral Moment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Axial Moment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Flexion/Extension Moment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Lateral Moment</a></li>
 </ul>
 </li>
 </ul>
@@ -574,73 +567,32 @@ Wilke H‐J, Herkommer A, Werner K, Liebsch C (2017) In Vitro Analysis of the Se
 <h3>SAFER HBM Version: <code class="docutils literal notranslate"><span class="pre">11.0</span></code><a class="headerlink" href="#safer-hbm-version-11-0" title="Permalink to this heading">#</a></h3>
 </section>
 </section>
-<section id="setup-and-prerequisites">
-<h2>Setup and prerequisites<a class="headerlink" href="#setup-and-prerequisites" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="variable-declaration">
-<h2>Variable declaration<a class="headerlink" href="#variable-declaration" title="Permalink to this heading">#</a></h2>
-</section>
 <section id="postprocessing-with-dynasaur">
 <h2>Postprocessing with dynasaur<a class="headerlink" href="#postprocessing-with-dynasaur" title="Permalink to this heading">#</a></h2>
-<div class="cell tag_remove-input docutils container">
-</div>
+<section id="plotting">
+<h3>Plotting<a class="headerlink" href="#plotting" title="Permalink to this heading">#</a></h3>
+<p>The reaction moment vs the upper pot rotation are plotted up until 7.5Nm.</p>
 </section>
-<section id="extracting-time-series">
-<h2>Extracting Time Series<a class="headerlink" href="#extracting-time-series" title="Permalink to this heading">#</a></h2>
-<div class="cell tag_remove-input docutils container">
-</div>
-</section>
-<section id="input-the-expriment-data">
-<h2>Input the expriment data<a class="headerlink" href="#input-the-expriment-data" title="Permalink to this heading">#</a></h2>
 <section id="axial-moment">
 <h3>Axial Moment<a class="headerlink" href="#axial-moment" title="Permalink to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/e7a7679a01bab19f9c5e84477b7c9e9e53568a9131ef1eee0c78de485ea4e37a.png" src="../../_images/e7a7679a01bab19f9c5e84477b7c9e9e53568a9131ef1eee0c78de485ea4e37a.png" />
+</div>
 </div>
 </section>
 <section id="flexion-extension-moment">
 <h3>Flexion/Extension Moment<a class="headerlink" href="#flexion-extension-moment" title="Permalink to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
-</div>
-</section>
-<section id="lateral-moment">
-<h3>Lateral Moment<a class="headerlink" href="#lateral-moment" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="plotting">
-<h3>Plotting<a class="headerlink" href="#plotting" title="Permalink to this heading">#</a></h3>
-<p>The reaction moment vs the upper pot rotation are plotted up until 7.5Nm.</p>
-</section>
-<section id="id1">
-<h3>Axial Moment<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\seyedri\AppData\Local\Temp\ipykernel_8340\3526738882.py:20: MatplotlibDeprecationWarning: An artist whose label starts with an underscore was passed to legend(); such artists will no longer be ignored in the future.  To suppress this warning, explicitly filter out such artists, e.g. with `[art for art in artists if not art.get_label().startswith(&#39;_&#39;)]`.
-  fig_ft.legend([&#39;Sim&#39;,&#39;_&#39;,&#39;Test&#39;],bbox_to_anchor=(0.28,0.32),fontsize=18);
-</pre></div>
-</div>
-<img alt="../../_images/e7a7679a01bab19f9c5e84477b7c9e9e53568a9131ef1eee0c78de485ea4e37a.png" src="../../_images/e7a7679a01bab19f9c5e84477b7c9e9e53568a9131ef1eee0c78de485ea4e37a.png" />
-</div>
-</div>
-</section>
-<section id="id2">
-<h3>Flexion/Extension Moment<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\seyedri\AppData\Local\Temp\ipykernel_8340\1076186730.py:22: MatplotlibDeprecationWarning: An artist whose label starts with an underscore was passed to legend(); such artists will no longer be ignored in the future.  To suppress this warning, explicitly filter out such artists, e.g. with `[art for art in artists if not art.get_label().startswith(&#39;_&#39;)]`.
-  fig_ft.legend([&#39;Sim&#39;,&#39;_&#39;,&#39;Test&#39;],bbox_to_anchor=(0.28,0.32),fontsize=18);
-</pre></div>
-</div>
 <img alt="../../_images/7cc22c18972d5fd4868873474c9fcfdc5cb1274d7346b6eb960862e1970ad8d5.png" src="../../_images/7cc22c18972d5fd4868873474c9fcfdc5cb1274d7346b6eb960862e1970ad8d5.png" />
 </div>
 </div>
 </section>
-<section id="id3">
-<h3>Lateral Moment<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<section id="lateral-moment">
+<h3>Lateral Moment<a class="headerlink" href="#lateral-moment" title="Permalink to this heading">#</a></h3>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\seyedri\AppData\Local\Temp\ipykernel_8340\176178150.py:22: MatplotlibDeprecationWarning: An artist whose label starts with an underscore was passed to legend(); such artists will no longer be ignored in the future.  To suppress this warning, explicitly filter out such artists, e.g. with `[art for art in artists if not art.get_label().startswith(&#39;_&#39;)]`.
-  fig_ft.legend([&#39;Sim&#39;,&#39;_&#39;,&#39;Test&#39;],bbox_to_anchor=(0.28,0.32),fontsize=18);
-</pre></div>
-</div>
 <img alt="../../_images/407d9ff7a289e3ec0876dd21de391401b8fda78a009c785638d57821e0e1bfc0.png" src="../../_images/407d9ff7a289e3ec0876dd21de391401b8fda78a009c785638d57821e0e1bfc0.png" />
 </div>
 </div>
@@ -720,18 +672,11 @@ Wilke H‐J, Herkommer A, Werner K, Liebsch C (2017) In Vitro Analysis of the Se
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#safer-hbm-version-11-0">SAFER HBM Version: <code class="docutils literal notranslate"><span class="pre">11.0</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-and-prerequisites">Setup and prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-declaration">Variable declaration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocessing-with-dynasaur">Postprocessing with dynasaur</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extracting-time-series">Extracting Time Series</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-the-expriment-data">Input the expriment data</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocessing-with-dynasaur">Postprocessing with dynasaur</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#axial-moment">Axial Moment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flexion-extension-moment">Flexion/Extension Moment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lateral-moment">Lateral Moment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Axial Moment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Flexion/Extension Moment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Lateral Moment</a></li>
 </ul>
 </li>
 </ul>

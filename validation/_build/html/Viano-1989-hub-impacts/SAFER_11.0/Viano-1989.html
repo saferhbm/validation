@@ -367,9 +367,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#information-on-the-subjects-specimens">Information on the subjects/specimens</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-and-boundary-conditions">Loading and Boundary Conditions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">Boundary Conditions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">Boundary Conditions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-for-oblique-abdomen-and-thorax-impact">Setup for oblique Abdomen and Thorax impact</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#other-comments">Other comments</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-for-lateral-hub-impact">Setup for lateral Hub impact</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#responses-recorded">Responses recorded</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-comments">Other comments</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocessing-with-dynasaur">Postprocessing with dynasaur</a></li>
@@ -595,25 +601,34 @@ document.write(`
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Coordinate</span> <span class="pre">system</span> </code>              : aligned with Global in simulations</p></li>
 </ul>
-<blockquote>
-<div><p><strong>Setup</strong></p>
+<section id="setup-for-oblique-abdomen-and-thorax-impact">
+<h4>Setup for oblique Abdomen and Thorax impact<a class="headerlink" href="#setup-for-oblique-abdomen-and-thorax-impact" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p><em><strong>Load case</strong></em>                     : oblique lateral throx impact</p></li>
-<li><p><em><strong>impactor dimensions</strong></em>       : <code class="docutils literal notranslate"><span class="pre">MAT_RIGID</span></code> cylinder wirg diameter <span class="math notranslate nohighlight">\(150mm\)</span>, height <span class="math notranslate nohighlight">\(60mm\)</span> and mass <span class="math notranslate nohighlight">\(23.4kg\)</span></p></li>
-<li><p><em><strong>impact location</strong></em>                    : Center of the pendulum aligned with Xiphoid process and rotated <span class="math notranslate nohighlight">\(30^0\)</span></p></li>
-<li><p><em><strong>Contacts</strong></em>                        : <code class="docutils literal notranslate"><span class="pre">*CONTACT_AUTOMATIC_SURFACE_TO_SURFACE</span></code> with <span class="math notranslate nohighlight">\(fs=0.3 , vdc=20, soft=2\)</span> between the impator and the HBM (without the arms <code class="docutils literal notranslate"><span class="pre">PID</span></code>).</p></li>
-</ul>
-<p><strong>Constraints and Loading</strong></p>
-<ul class="simple">
-<li><p><em><strong>Loads</strong></em>            :</p>
-<ul>
+<li><p>Impactor dimensions      : <code class="docutils literal notranslate"><span class="pre">MAT_RIGID</span></code> cylinder wirg diameter <span class="math notranslate nohighlight">\(150mm\)</span>, height <span class="math notranslate nohighlight">\(60mm\)</span> and mass <span class="math notranslate nohighlight">\(23.4kg\)</span></p></li>
+<li><p>Impact location                    : Center of the pendulum aligned with Xiphoid process for thoracic impact and 75mm below for abdomen impact and rotated <span class="math notranslate nohighlight">\(30^0\)</span></p></li>
+<li><p>Contacts                        : <code class="docutils literal notranslate"><span class="pre">*CONTACT_AUTOMATIC_SURFACE_TO_SURFACE</span></code> with <span class="math notranslate nohighlight">\(fs=0.3 , vdc=20, soft=2\)</span> between the impator and the HBM (without the arms <code class="docutils literal notranslate"><span class="pre">PID</span></code>).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">*BOUNDARY_PRESCRIBED_MOTION_RIGID</span></code> define constant displacement rate of impactor at 4.4 m/s, 6.5m/s and 9.5 m/s</p></li>
 <li><p>No gravity defined</p></li>
-<li><p>Termination time set to 60ms</p></li>
 </ul>
-</li>
+<section id="other-comments">
+<h5>Other comments<a class="headerlink" href="#other-comments" title="Permalink to this heading">#</a></h5>
+<ul class="simple">
+<li><p>The impactor in the tests are aligned to the Xiphoid process, which is 75 mm below the geometrial center of the sternum [1].</p></li>
+<li><p>In the SAFER HBM the mid point of the Xiphoid proces and the sternum is 78 mm apart.</p></li>
+<li><p>All the simulations for the thoracic impact is aligned to the center of the Xiphoid proces in the FE model.</p></li>
 </ul>
-</div></blockquote>
+</section>
+</section>
+<section id="setup-for-lateral-hub-impact">
+<h4>Setup for lateral Hub impact<a class="headerlink" href="#setup-for-lateral-hub-impact" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Impactor dimensions      : <code class="docutils literal notranslate"><span class="pre">MAT_RIGID</span></code> cylinder wirg diameter <span class="math notranslate nohighlight">\(150mm\)</span>, height <span class="math notranslate nohighlight">\(60mm\)</span> and mass <span class="math notranslate nohighlight">\(23.4kg\)</span></p></li>
+<li><p>Impact location                    : 90° with the impactor centered on the greater trochanter.</p></li>
+<li><p>Contacts                        : <code class="docutils literal notranslate"><span class="pre">*CONTACT_AUTOMATIC_SURFACE_TO_SURFACE</span></code> with <span class="math notranslate nohighlight">\(fs=0.3 , vdc=20, soft=2\)</span> between the impator and the HBM (without the arms <code class="docutils literal notranslate"><span class="pre">PID</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*BOUNDARY_PRESCRIBED_MOTION_RIGID</span></code> define constant displacement rate of impactor at : 5.2 m/s and 9.8 m/s.</p></li>
+<li><p>No gravity defined</p></li>
+</ul>
+</section>
 </section>
 <section id="responses-recorded">
 <h3>Responses recorded<a class="headerlink" href="#responses-recorded" title="Permalink to this heading">#</a></h3>
@@ -622,14 +637,6 @@ document.write(`
 <li><p>Rigid impactor displacement</p></li>
 </ul>
 <p>The reference values from the paper were digitalised and are incuded in the notebook. The data corresponds to the unnormalised corridors.</p>
-</section>
-<section id="other-comments">
-<h3>Other comments<a class="headerlink" href="#other-comments" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>The impactor in the tests are aligned to the Xiphoid process, which is 75 mm below the geometrial center of the sternum [1].</p></li>
-<li><p>In the SAFER V10.0 the mid point of the Xiphoid proces and the sternum is 78 mm apart.</p></li>
-<li><p>All the simulations for the thoracic impact is aligned to the center of the Xiphoid proces in the FE model.</p></li>
-</ul>
 </section>
 </section>
 <section id="postprocessing-with-dynasaur">
@@ -1591,9 +1598,15 @@ Abdomen
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#information-on-the-subjects-specimens">Information on the subjects/specimens</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-and-boundary-conditions">Loading and Boundary Conditions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">Boundary Conditions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">Boundary Conditions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-for-oblique-abdomen-and-thorax-impact">Setup for oblique Abdomen and Thorax impact</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#other-comments">Other comments</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-for-lateral-hub-impact">Setup for lateral Hub impact</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#responses-recorded">Responses recorded</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-comments">Other comments</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocessing-with-dynasaur">Postprocessing with dynasaur</a></li>
