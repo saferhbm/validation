@@ -1,8 +1,0 @@
-	{
-	"OBJECTS": 
-	[
-		{"type": "CONTACT", "name" : "Impactor-to-HBM-m", "id" : ["9900011m"] },
-		{"type": "NODE", "name" : "Impactor", "id" : [9010000] },
-        {"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
-    ]
-	}
