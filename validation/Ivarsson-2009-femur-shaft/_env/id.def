@@ -1,7 +1,0 @@
-	{
-	"OBJECTS": 
-	[
-		{"type": "CONTACT", "name": "impactor_contact", "id": ["2m"]},
-		{"type": "OBJECT","name": "femur_cortical","id": [1150500]}
-        ]
-	}
