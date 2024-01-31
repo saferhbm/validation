@@ -1,0 +1,78 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},{
+	"DATA VISUALIZATION": 
+	[
+    {		
+        "name": "displacement",
+		"part_of": "Ball",
+		"x": {"label": "time","type": "RIGID_BODY","ID": "ball","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "RIGID_BODY","ID": "ball","array": ["(0, global_dy)"]}
+	},{		
+        "name": "PointAx",
+		"part_of": "Model",
+		"x": {"label": "time","type": "NODE","ID": "point_A","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "NODE","ID": "point_A","array": ["(0, x_displacement)"]}
+	},{		
+        "name": "PointAy",
+		"part_of": "Model",
+		"x": {"label": "time","type": "NODE","ID": "point_A","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "NODE","ID": "point_A","array": ["(0, y_displacement)"]}
+	},{		
+        "name": "PointAz",
+		"part_of": "Model",
+		"x": {"label": "time","type": "NODE","ID": "point_A","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "NODE","ID": "point_A","array": ["(0, z_displacement)"]}
+	},{		
+        "name": "PointBx",
+		"part_of": "Model",
+		"x": {"label": "time","type": "NODE","ID": "point_B","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "NODE","ID": "point_B","array": ["(0, x_displacement)"]}
+	},{		
+        "name": "PointBy",
+		"part_of": "Model",
+		"x": {"label": "time","type": "NODE","ID": "point_A","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "NODE","ID": "point_B","array": ["(0, y_displacement)"]}
+	},{		
+        "name": "PointBz",
+		"part_of": "Model",
+		"x": {"label": "time","type": "NODE","ID": "point_A","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "NODE","ID": "point_B","array": ["(0, z_displacement)"]}
+	},{
+        "name": "contact_force",
+        "part_of": "Model",
+        "x": {"label": "time","type": "CONTACT","ID": "ball-impactor-contact","array": ["(0, time)"]},
+        "y": {
+                "function": {
+                    "name": "res",
+                    "param": {
+                        "data_vector": {
+                            "function": {
+                                "name": "cfc",
+                                "param": {
+                                    "cfc": 600,
+                                    "time": {
+                                        "type": "CONTACT",
+                                        "ID": "ball-impactor-contact",
+                                        "array": ["(0, time)"]
+                                    },
+                                    "sampled_array": {
+                                        "type": "CONTACT",
+                                        "ID": "ball-impactor-contact",
+                                        "array": ["(0, x_force)", "(0, y_force)", "(0, z_force)"]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "label": "force"
+            }
+    }
+    ]
+    }
+]           

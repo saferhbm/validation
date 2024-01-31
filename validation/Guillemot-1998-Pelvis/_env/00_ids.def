@@ -1,0 +1,10 @@
+{
+"OBJECTS": 
+[
+	{"type": "RIGID_BODY", "name": "ball", "id": [10]},
+	{"type": "NODE", "name": "point_A", "id": [2025842]},
+	{"type": "NODE", "name": "point_B", "id": [2023109]},
+	{"type": "CONTACT", "name": "ball-impactor-contact", "id": ["10m"]},
+	{"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
+	]
+}
