@@ -1,0 +1,78 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},{
+	"DATA VISUALIZATION": 
+	[
+    {		
+        "name": "impactor_displacement",
+		"part_of": "impactor",
+		"x": {"label": "time","type": "RIGID_BODY","ID": "impactor","array": ["(0, time)"]},
+		"y": {"label": "displacement","type": "RIGID_BODY","ID": "impactor","array": ["(0, global_dz"]}
+	},{
+        "name": "reaction_force",
+        "part_of": "Model",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "Reaction_load_cell","array": ["(0, time)"]},
+        "y": {
+                "function": {
+                    "name": "res",
+                    "param": {
+                        "data_vector": {
+                            "function": {
+                                "name": "cfc",
+                                "param": {
+                                    "cfc": 1000,
+                                    "time": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "Reaction_load_cell",
+                                        "array": ["(0, time)"]
+                                    },
+                                    "sampled_array": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "Reaction_load_cell",
+                                        "array": ["(0, x_force)", "(0, y_force)", "(0, z_force)"]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "label": "force"
+            }
+    },{
+        "name": "reaction_moment",
+        "part_of": "Model",
+        "x": {"label": "time","type": "BOUNDARY_CONDITION","ID": "Reaction_load_cell","array": ["(0, time)"]},
+        "y": {
+                "function": {
+                    "name": "res",
+                    "param": {
+                        "data_vector": {
+                            "function": {
+                                "name": "cfc",
+                                "param": {
+                                    "cfc": 1000,
+                                    "time": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "Reaction_load_cell",
+                                        "array": ["(0, time)"]
+                                    },
+                                    "sampled_array": {
+                                        "type": "BOUNDARY_CONDITION",
+                                        "ID": "Reaction_load_cell",
+                                        "array": ["(0, xmoment)", "(0, ymoment)", "(0, zmoment)"]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "label": "moment"
+            }
+    }
+    ]
+    }
+]           
