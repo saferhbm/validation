@@ -1,0 +1,58 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+        "DATA VISUALIZATION": [
+			
+			{
+				"name": "displacement",
+				"part_of": "impactor",
+				"x": {"label": "time","type": "RIGID_BODY","ID": "impactor","array": ["(0, time)"]},
+				"y": {"label": "displacement","type": "RIGID_BODY","ID": "impactor","array": ["(0, global_dz)"]}
+			},
+			{
+				"name": "Force_no_filter",
+				"part_of": "impactor",
+				"x": {"label": "time","type": "CONTACT","ID": "impactor_contact","array": ["(0, time)"]},
+				"y": {"label": "force","type": "CONTACT","ID": "impactor_contact","array": ["(0, z_force)"]}
+			},
+			{
+				"name": "Force",
+				"part_of": "impactor",
+				"x": {"label": "time","type": "CONTACT","ID": "impactor_contact","array": ["(0, time)"]},
+				"y": {
+						"function": {
+							"name": "res",
+							"param": {
+								"data_vector": {
+									"function": {
+										"name": "cfc",
+										"param": {
+											"cfc": 600,
+											"time": {
+												"type": "CONTACT",
+												"ID": "impactor_contact",
+												"array": ["(0, time)"]
+											},
+											"sampled_array": {
+												"type": "CONTACT",
+												"ID": "impactor_contact",
+												"array": ["(0, z_force)"]
+											}
+										}
+									}
+								}
+							}
+						},
+						"label": "force"
+					}
+			}
+			                     
+        ]
+    }
+]           
+             

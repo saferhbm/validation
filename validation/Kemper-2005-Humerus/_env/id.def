@@ -1,0 +1,8 @@
+	{
+	"OBJECTS": 
+	[
+		{"type": "CONTACT", "name": "impactor_contact", "id": ["1m"]},     
+		{"type": "RIGID_BODY", "name": "impactor", "id": [4300005]},
+        {"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
+        ]
+	}
