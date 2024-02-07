@@ -1,8 +1,0 @@
-{
-"OBJECTS" : [
-    {"type": "CONTACT", "name" : "Table-to-HBM-torso-m", "id" : ["99000002m"] },
-    {"type": "DISCRETE", "name": "Chest_Deflection", "id": [95001311]},
-    {"type": "ENERGY_GLOBAL", "name": "Model", "id": [0]}
-    ]
-}
-
