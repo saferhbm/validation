@@ -1,0 +1,8 @@
+{
+"OBJECTS": 
+[
+	{"type": "RIGID_BODY", "name": "impactor", "id": [11]},
+	{"type": "BOUNDARY_CONDITION", "name": "Reaction_load_cell", "id": [21]},
+	{"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]}
+	]
+}
