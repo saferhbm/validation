@@ -35,7 +35,6 @@ parts:
     - file: sections/Front Impact
       sections:
       - file: Shaw-2009-gold-standard-1/SAFER_11.0/GS1-2009-BC_kinematic-plots
-      - file: Kent-2004-table-top/SAFER_11.0/Kent-2003-tabletop
       - file: Lebarbe-2012-frontal-hub/SAFER_11.0/lebarbe
     - file: sections/Side Impact
       sections:

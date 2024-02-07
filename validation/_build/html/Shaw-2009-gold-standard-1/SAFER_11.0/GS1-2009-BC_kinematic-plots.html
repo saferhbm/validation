@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css?v=6ad1a40c" />
   
@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Shaw-2009-gold-standard-1/SAFER_11.0/GS1-2009-BC_kinematic-plots';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Kent et al. (2004): Table Top tests" href="../../Kent-2004-table-top/SAFER_11.0/Kent-2003-tabletop.html" />
+    <link rel="next" title="Lebarbé et al (2012): Mid-sternum hub impact" href="../../Lebarbe-2012-frontal-hub/SAFER_11.0/lebarbe.html" />
     <link rel="prev" title="Front Impact" href="../../sections/Front%20Impact.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -204,7 +204,6 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../sections/Front%20Impact.html">Front Impact</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Shaw (2009): Gold Standard 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Kent-2004-table-top/SAFER_11.0/Kent-2003-tabletop.html">Kent et al. (2004): Table Top tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Lebarbe-2012-frontal-hub/SAFER_11.0/lebarbe.html">Lebarbé et al (2012): Mid-sternum hub impact</a></li>
 </ul>
 </li>
@@ -372,14 +371,14 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hbm-kinematics">HBM Kinematics</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#head">Head</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t1-kinamatics">T1-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t8-kinamatics">T8-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#l2-kinamatics">L2-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#l4-kinamatics">L4-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#left-acromion-kinamatics">Left Acromion-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#right-acromion-kinamatics">Right Acromion-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pelvis-kinamatics">Pelvis-Kinamatics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#head-kinematics">Head-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t1-kinematics">T1-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t8-kinematics">T8-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#l2-kinematics">L2-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#l4-kinematics">L4-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#left-acromion-kinematics">Left Acromion-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#right-acromion-kinematics">Right Acromion-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pelvis-kinematics">Pelvis-Kinematics</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chest-compression-x-dir">Chest Compression x-dir</a></li>
 </ul>
 </li>
@@ -543,64 +542,64 @@ document.write(`
 </section>
 <section id="hbm-kinematics">
 <h3>HBM Kinematics<a class="headerlink" href="#hbm-kinematics" title="Permalink to this heading">#</a></h3>
-<section id="head">
-<h4>Head<a class="headerlink" href="#head" title="Permalink to this heading">#</a></h4>
+<section id="head-kinematics">
+<h4>Head-Kinematics<a class="headerlink" href="#head-kinematics" title="Permalink to this heading">#</a></h4>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="../../_images/174042005e85d155fd8c2e2cf95ae2c052ada82922de60627ceebdeaa58e2d7f.png" src="../../_images/174042005e85d155fd8c2e2cf95ae2c052ada82922de60627ceebdeaa58e2d7f.png" />
 </div>
 </div>
 </section>
-<section id="t1-kinamatics">
-<h4>T1-Kinamatics<a class="headerlink" href="#t1-kinamatics" title="Permalink to this heading">#</a></h4>
+<section id="t1-kinematics">
+<h4>T1-Kinematics<a class="headerlink" href="#t1-kinematics" title="Permalink to this heading">#</a></h4>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="../../_images/60f26202759a0e4ab3ab4b38403d2434e063340a7612e220d5f205526d173a82.png" src="../../_images/60f26202759a0e4ab3ab4b38403d2434e063340a7612e220d5f205526d173a82.png" />
 </div>
 </div>
 </section>
-<section id="t8-kinamatics">
-<h4>T8-Kinamatics<a class="headerlink" href="#t8-kinamatics" title="Permalink to this heading">#</a></h4>
+<section id="t8-kinematics">
+<h4>T8-Kinematics<a class="headerlink" href="#t8-kinematics" title="Permalink to this heading">#</a></h4>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="../../_images/18df441e1e3875814b6813289657c9de82cac04a5cda38a637c6f495947b8cd5.png" src="../../_images/18df441e1e3875814b6813289657c9de82cac04a5cda38a637c6f495947b8cd5.png" />
 </div>
 </div>
 </section>
-<section id="l2-kinamatics">
-<h4>L2-Kinamatics<a class="headerlink" href="#l2-kinamatics" title="Permalink to this heading">#</a></h4>
+<section id="l2-kinematics">
+<h4>L2-Kinematics<a class="headerlink" href="#l2-kinematics" title="Permalink to this heading">#</a></h4>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="../../_images/b910c0e3f6a0066b88ff08f4ea3be061befbb87eef82030475cd9e77b3b0b69b.png" src="../../_images/b910c0e3f6a0066b88ff08f4ea3be061befbb87eef82030475cd9e77b3b0b69b.png" />
 </div>
 </div>
 </section>
-<section id="l4-kinamatics">
-<h4>L4-Kinamatics<a class="headerlink" href="#l4-kinamatics" title="Permalink to this heading">#</a></h4>
+<section id="l4-kinematics">
+<h4>L4-Kinematics<a class="headerlink" href="#l4-kinematics" title="Permalink to this heading">#</a></h4>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="../../_images/9d649e45d812fe6f7b683f5d80c9ca41de56859ca6f52f2b0c5fac53e965b835.png" src="../../_images/9d649e45d812fe6f7b683f5d80c9ca41de56859ca6f52f2b0c5fac53e965b835.png" />
 </div>
 </div>
 </section>
-<section id="left-acromion-kinamatics">
-<h4>Left Acromion-Kinamatics<a class="headerlink" href="#left-acromion-kinamatics" title="Permalink to this heading">#</a></h4>
+<section id="left-acromion-kinematics">
+<h4>Left Acromion-Kinematics<a class="headerlink" href="#left-acromion-kinematics" title="Permalink to this heading">#</a></h4>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="../../_images/f898e979c7dd25dfdb33b448ddb143d3059bc241d4a560a9e57f14b6a9a60178.png" src="../../_images/f898e979c7dd25dfdb33b448ddb143d3059bc241d4a560a9e57f14b6a9a60178.png" />
 </div>
 </div>
 </section>
-<section id="right-acromion-kinamatics">
-<h4>Right Acromion-Kinamatics<a class="headerlink" href="#right-acromion-kinamatics" title="Permalink to this heading">#</a></h4>
+<section id="right-acromion-kinematics">
+<h4>Right Acromion-Kinematics<a class="headerlink" href="#right-acromion-kinematics" title="Permalink to this heading">#</a></h4>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="../../_images/ce1a50b1af259191ecdd7217d50617136150c1bf784f14c5158e9f2df918fd0b.png" src="../../_images/ce1a50b1af259191ecdd7217d50617136150c1bf784f14c5158e9f2df918fd0b.png" />
 </div>
 </div>
 </section>
-<section id="pelvis-kinamatics">
-<h4>Pelvis-Kinamatics<a class="headerlink" href="#pelvis-kinamatics" title="Permalink to this heading">#</a></h4>
+<section id="pelvis-kinematics">
+<h4>Pelvis-Kinematics<a class="headerlink" href="#pelvis-kinematics" title="Permalink to this heading">#</a></h4>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="../../_images/e60277cadac398bb870dedddb7e1996d60ffe8154d61158a6f0d113df782d946.png" src="../../_images/e60277cadac398bb870dedddb7e1996d60ffe8154d61158a6f0d113df782d946.png" />
@@ -1307,11 +1306,11 @@ Overall Average for NFR3+: 87.27
       </div>
     </a>
     <a class="right-next"
-       href="../../Kent-2004-table-top/SAFER_11.0/Kent-2003-tabletop.html"
+       href="../../Lebarbe-2012-frontal-hub/SAFER_11.0/lebarbe.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Kent et al. (2004): Table Top tests</p>
+        <p class="prev-next-title">Lebarbé et al (2012): Mid-sternum hub impact</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1342,14 +1341,14 @@ Overall Average for NFR3+: 87.27
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hbm-kinematics">HBM Kinematics</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#head">Head</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t1-kinamatics">T1-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t8-kinamatics">T8-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#l2-kinamatics">L2-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#l4-kinamatics">L4-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#left-acromion-kinamatics">Left Acromion-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#right-acromion-kinamatics">Right Acromion-Kinamatics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pelvis-kinamatics">Pelvis-Kinamatics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#head-kinematics">Head-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t1-kinematics">T1-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t8-kinematics">T8-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#l2-kinematics">L2-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#l4-kinematics">L4-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#left-acromion-kinematics">Left Acromion-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#right-acromion-kinematics">Right Acromion-Kinematics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pelvis-kinematics">Pelvis-Kinematics</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#chest-compression-x-dir">Chest Compression x-dir</a></li>
 </ul>
 </li>

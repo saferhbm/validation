@@ -1,4 +1,0 @@
-# Lower Extremity
-
-```{tableofcontents}
-```
