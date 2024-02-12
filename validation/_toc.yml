@@ -47,3 +47,4 @@ parts:
     - file: sections/Side Impact
       sections:
       - file: Viano-1989-hub-impacts/SAFER_11.0/Viano-1989
+      - file: Miller-2013-Nearside/SAFER_11.0/Miller-2013
