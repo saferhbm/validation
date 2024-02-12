@@ -1,0 +1,34 @@
+{
+    "OBJECTS": [ 
+			{
+				"type": "ENERGY_GLOBAL",
+				"name": "Model",
+				"id": [0]
+			},
+			{
+				"type" : "CONTACT",
+				"name" : "Contact_proximal",
+				"id" : ["1s"]
+			},
+			{
+				"type" : "CONTACT",
+				"name" : "Contact_distal",
+				"id" : ["2s"]
+			},
+			{
+				"type": "OBJECT",
+				"name": "LX-Bone-Tibia-Cortical-R",
+				"id": [910350]
+			},
+			{
+				"type" : "CROSS_SECTION",
+				"name" : "Cross_section_loadcell_proximal",
+				"id" : [1]
+			},
+			{
+				"type" : "CROSS_SECTION",
+				"name" : "Cross_section_loadcell_distal",
+				"id" : [10000001]
+			}			
+      ]            
+}

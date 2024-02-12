@@ -1,0 +1,134 @@
+[
+    {
+       "UNIT":{
+        "time": "ms",
+        "length": "mm",
+        "mass" : "kg"
+    }
+    },      
+            {
+            "DATA VISUALIZATION": [
+			{
+				"name": "Added_Mass",
+				"part_of": "MODEL",
+				"y": {
+					"label": "mass",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, added_mass)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "Total_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, total_energy)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "Internal_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, internal_energy)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "Kinetic_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, kinetic_energy)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+				"name": "Hourglass_Energy",
+				"part_of": "MODEL",
+				"y": {
+					"label": "energy",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, hourglass_energy)"]
+				},
+				"x": {
+					"label": "time",
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+				},
+				
+			{
+	    	"name": "Proximal_loadcell_secforc_z",
+	    	              "part_of": "TIBIA",
+	    	              "x" : {"label": "time", "type": "CROSS_SECTION", "ID": "Cross_section_loadcell_distal", "array": ["(0, time)"]},
+	    	              "y" : {"label": "force", "type": "CROSS_SECTION", "ID": "Cross_section_loadcell_distal", "array": ["(0, z_force)"]}
+            },
+
+			{
+	    	"name": "Distal_loadcell_secforc_z",
+	    	              "part_of": "TIBIA",
+	    	              "x" : {"label": "time", "type": "CROSS_SECTION", "ID": "Cross_section_loadcell_proximal", "array": ["(0, time)"]},
+	    	              "y" : {"label": "force", "type": "CROSS_SECTION", "ID": "Cross_section_loadcell_proximal", "array": ["(0, z_force)"]}
+            },
+			
+				{
+				"name": "Contact_Force_proximal_z",
+				"part_of": "TIBIA",
+				"x": {"label": "time", "type": "CONTACT", "ID": "Contact_proximal", "array": ["(0, time)"]},
+				"y": {"label": "force", "type": "CONTACT", "ID": "Contact_proximal", "array": ["(0, z_force)"]}
+				},
+				{
+				"name": "Contact_Force_distal_z",
+				"part_of": "TIBIA",
+				"x": {"label": "time", "type": "CONTACT", "ID": "Contact_distal", "array": ["(0, time)"]},
+				"y": {"label": "force", "type": "CONTACT", "ID": "Contact_distal", "array": ["(0, z_force)"]}
+				},							
+							
+				
+				{
+                "name": "Tibia_Cortical_R_MPS",
+                "part_of": "BONES",
+                "x": {"label": "time", "function": {"name": "object_time","param": {"object_data": {"type": "OBJECT","ID": "LX-Bone-Tibia-Cortical-R","strain_stress": "Strain"}}}},
+                "y": {"label": "strain", "function": {"name": "stress_strain_time_history","param": {"object_data": {"type": "OBJECT","ID": "LX-Bone-Tibia-Cortical-R","strain_stress": "Strain"},"integration_point": "Mean","selection_tension_compression": "Overall","percentile": 100, "interpolation": "linear"}}}
+				},
+				{
+                "name": "Tibia_Cortical_R_PS99",
+                "part_of": "BONES",
+                "x": {"label": "time", "function": {"name": "object_time","param": {"object_data": {"type": "OBJECT","ID": "LX-Bone-Tibia-Cortical-R","strain_stress": "Strain"}}}},
+                "y": {"label": "strain", "function": {"name": "stress_strain_time_history","param": {"object_data": {"type": "OBJECT","ID": "LX-Bone-Tibia-Cortical-R","strain_stress": "Strain"},"integration_point": "Mean","selection_tension_compression": "Overall","percentile": 99, "interpolation": "linear"}}}
+				}
+        ]
+    }     
+]
