@@ -37,6 +37,7 @@ parts:
     - file: sections/Lower Extremity
       sections:
       - file: Ivarsson-2009-femur-shaft/SAFER_11.0/Ivarsson-2009
+      - file: Harden-2021-tibia-shaft/SAFER 11.0/Harden-2021-tibia-shaft-SAFEFR11
   - caption: Full body - Passive
     chapters:
     - file: sections/Front Impact
