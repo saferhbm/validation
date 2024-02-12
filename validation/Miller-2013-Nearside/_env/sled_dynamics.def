@@ -1,0 +1,19 @@
+[
+    {
+    "DATA VISUALIZATION": [
+        {
+			"name": "Impact",
+			"part_of": "Sled",
+			"x": {"label": "time","type": "NODE","ID": "impactor_sled","array": ["(0, time)"]},
+			"y": {"label": "velocity","type": "NODE","ID": "impactor_sled","array": ["(0, x_velocity)"]}
+		},
+		
+		{
+			"name": "Occupant",
+			"part_of": "Sled",
+			"x": {"label": "time","type": "NODE","ID": "occupant_sled","array": ["(0, time)"]},
+			"y": {"label": "velocity","type": "NODE","ID": "occupant_sled","array": ["(0, x_velocity)"]}
+		}
+	]
+	}
+]
