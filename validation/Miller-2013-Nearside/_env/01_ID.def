@@ -1,0 +1,19 @@
+	{
+	"OBJECTS": 
+	[
+		{"type": "CONTACT", "name" : "Thorax_Force", "id" : 		["89000034m"] },
+		{"type": "CONTACT", "name" : "Abdominal_Force", "id" : 		["89000035m"] },
+		{"type": "CONTACT", "name" : "Pelvic_IW_Force", "id" : 		["89000036m"] },
+		{"type": "CONTACT", "name" : "Pelvic_GT_Force", "id" : 		["89000037m"] },
+		{"type": "CONTACT", "name" : "Femur_Mid_Shaft_Force", "id" :["89000038m"] },
+        {"type":"ENERGY_GLOBAL", "name": "Model", "id": [0]},
+		{"type": "NODE", "name" : "U_fr",      "id" : [4502020]},
+		{"type": "NODE", "name" : "U_bk",      "id" : [4501968]},
+		{"type": "NODE", "name" : "U_Lat",      "id" : [4502049]},
+		{"type": "NODE", "name" : "L_fr",      "id" : [4502121]},
+		{"type": "NODE", "name" : "L_bk",      "id" : [4502072]},
+		{"type": "NODE", "name" : "L_Lat",      "id" : [4502149]},
+		{"type": "NODE", "name" : "impactor_sled",      "id" : [123202]},
+		{"type": "NODE", "name" : "occupant_sled",      "id" : [204369]}
+    ]
+	}

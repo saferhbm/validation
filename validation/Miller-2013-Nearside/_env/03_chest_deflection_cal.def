@@ -1,0 +1,96 @@
+[
+    {
+    "DATA VISUALIZATION": [
+        {
+            "name": "U_fr-x", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_fr", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_fr", "array": ["(0, x_coordinate)"]}
+        },
+        {
+            "name": "U_fr-y", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_fr", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_fr", "array": ["(0, y_coordinate)"]}
+        },
+        {
+            "name": "U_fr-z", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_fr", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_fr", "array": ["(0, z_coordinate)"]}
+        },
+        {
+            "name": "U_bk-x", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_bk", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_bk", "array": ["(0, x_coordinate)"]}
+        },
+        {
+            "name": "U_bk-y", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_bk", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_bk", "array": ["(0, y_coordinate)"]}
+        },
+        {
+            "name": "U_bk-z", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_bk", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_bk", "array": ["(0, z_coordinate)"]}
+        },
+        {
+            "name": "U_Lat-x", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_Lat", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_Lat", "array": ["(0, x_coordinate)"]}
+        },
+        {
+            "name": "U_Lat-y", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_Lat", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_Lat", "array": ["(0, y_coordinate)"]}
+        },
+        {
+            "name": "U_Lat-z", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "U_Lat", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "U_Lat", "array": ["(0, z_coordinate)"]}
+        },
+        {
+            "name": "L_fr-x", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_fr", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_fr", "array": ["(0, x_coordinate)"]}
+        },
+        {
+            "name": "L_fr-y", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_fr", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_fr", "array": ["(0, y_coordinate)"]}
+        },
+        {
+            "name": "L_fr-z", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_fr", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_fr", "array": ["(0, z_coordinate)"]}
+        },
+        {
+            "name": "L_bk-x", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_bk", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_bk", "array": ["(0, x_coordinate)"]}
+        },
+        {
+            "name": "L_bk-y", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_bk", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_bk", "array": ["(0, y_coordinate)"]}
+        },
+        {
+            "name": "L_bk-z", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_bk", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_bk", "array": ["(0, z_coordinate)"]}
+        },
+        {
+            "name": "L_Lat-x", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_Lat", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_Lat", "array": ["(0, x_coordinate)"]}
+        },
+        {
+            "name": "L_Lat-y", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_Lat", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_Lat", "array": ["(0, y_coordinate)"]}
+        },
+        {
+            "name": "L_Lat-z", "part_of": "CB", 
+            "x": {"label": "time", "type": "NODE", "ID": "L_Lat", "array": ["(0, time)"]}, 
+            "y": {"label": "displacement", "type": "NODE", "ID": "L_Lat", "array": ["(0, z_coordinate)"]}
+        }
+	]
+	}
+]

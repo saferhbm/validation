@@ -1,0 +1,46 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"mass": "kg"
+		}
+	},
+    {
+    "DATA VISUALIZATION": [
+        {
+			"name": "Thorax_Force",
+			"part_of": "MODEL",
+			"x": {"label": "time","type": "CONTACT","ID": "Thorax_Force","array": ["(0, time)"]},
+			"y": {"label": "force","type": "CONTACT","ID": "Thorax_Force","array": ["(0, x_force)"]}
+		},
+		
+		{
+			"name": "Abdominal_Force",
+			"part_of": "MODEL",
+			"x": {"label": "time","type": "CONTACT","ID": "Abdominal_Force","array": ["(0, time)"]},
+			"y": {"label": "force","type": "CONTACT","ID": "Abdominal_Force","array": ["(0, x_force)"]}
+		},
+		
+		{
+			"name": "Pelvic_GT_Force",
+			"part_of": "MODEL",
+			"x": {"label": "time","type": "CONTACT","ID": "Pelvic_GT_Force","array": ["(0, time)"]},
+			"y": {"label": "force","type": "CONTACT","ID": "Pelvic_GT_Force","array": ["(0, x_force)"]}
+		},
+		
+		{
+			"name": "Pelvic_IW_Force",
+			"part_of": "MODEL",
+			"x": {
+				"label": "time","type": "CONTACT","ID": "Pelvic_IW_Force","array": ["(0, time)"]},
+			"y": {"label": "force","type": "CONTACT","ID": "Pelvic_IW_Force","array": ["(0, x_force)"]}
+		},
+		{
+			"name": "Femur_Mid_Shaft_Force",
+			"part_of": "MODEL",
+			"x": {"label": "time","type": "CONTACT","ID": "Femur_Mid_Shaft_Force","array": ["(0, time)"]},
+			"y": {"label": "force","type": "CONTACT","ID": "Femur_Mid_Shaft_Force","array": ["(0, x_force)"]}
+		}
+	]
+	}
+]
