@@ -1,4 +1,0 @@
-# Thoracic Spine
-
-```{tableofcontents}
-```

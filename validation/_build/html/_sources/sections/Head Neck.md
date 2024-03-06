@@ -1,4 +1,0 @@
-# Head Neck
-
-```{tableofcontents}
-```

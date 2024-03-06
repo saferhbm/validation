@@ -1,4 +1,0 @@
-# Cervical Spine
-
-```{tableofcontents}
-```

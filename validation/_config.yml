@@ -1,9 +1,10 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: SAFER Validation Catalog
+title: SAFER 
 author: SAFER global arena
-# logo: 
+copyright  : "2023-24"  # Copyright year to be placed in the footer
+logo: sections/logo_s.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -11,12 +12,6 @@ execute:
   execute_notebooks: off
 
 only_build_toc_files: true # Only build the files mentioned in the ToC
-
-# Define the name of the latex output file for PDF builds
-# latex:
-#   latex_documents:
-#     targetname: book.tex
-
 # Add a bibtex file so that we can create citations
 # bibtex_bibfiles:
 #   - references.bib
@@ -24,11 +19,37 @@ only_build_toc_files: true # Only build the files mentioned in the ToC
 html:
   announcement: " ⚠️ Work in Progress ⚠️"
   html_theme : "sphinx_book_theme"
-  home_page_in_navbar: True
-  # extensions : "jupyterhub_sphinx_theme"
-
-html_theme_options :
-  show_version_warning_banner: True
+  home_page_in_navbar: false
+  use_repository_button: false
+  baseurl: https://github.com/saferhbm/validation
+  use_issues_button: True
   
+
+repository:
+  url: https://github.com/saferhbm/validation  # Online location of your book
+  path_to_book: validation  # Optional path to your book, relative to the repository root
+  branch: build_jupyter_book  # Which branch of the repository should be used when creating links (optional)
+  # extensions : "jupyterhub_sphinx_theme"
+# html_theme_options :
+#   html_static_path : ["_static"]
+#   html_css_files: ["custom.css"]
+# extra_css:
+#   - _static/custom.css
+# extra_javascript:
+#   - _static/custom.js
+# html_theme_options :
+#   
+#   show_version_warning_banner: True
+#   home_page_in_toc: False
+#   collapse_navbar: True
 sphinx:
-  recursive_update: True
+  recursive_update: true
+  # config:
+  #   html_theme: sphinx_material
+  #   html_theme_options:
+  #     color_primary: 'grey'
+  #     repo_url: https://github.com/saferhbm/validation
+  #     globaltoc_depth: 3
+  #     globaltoc_collapse: False
+#   footer_start: ["copyright"]
+#   footer_center: ["SAFER Global arena"]

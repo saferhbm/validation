@@ -6,27 +6,27 @@ root: main
 parts:
   - caption: Submodels
     chapters:
-    - file: sections/Head Neck
+    - file: sections/Head_Neck
       sections:
       - file: Stemper-2004-head-neck/SAFER_11.0/stemper-2004
       - file: Kang-2018-head-neck/SAFER_11.0/Kang-2018
-    - file: sections/Cervical Spine
+    - file: sections/Cervical_Spine
       sections:
       - file: Nightingale-2007-cervical-spine/SAFER_11.0/Nightingale-2007
       - file: Panjabi-2001-cervical-spine/SAFER_11.0/Panjabi-2001
-    - file: sections/Upper Extremity
+    - file: sections/Upper_Extremity
       sections:
-      - file: Duma-1999-upper-arm/SAFER 11.0/Duma-1999-upper-arm-SAFEFR11
-      - file: Kemper-2005-upper-arm/SAFER 11.0/Kemper-2005-upper-arm-SAFEFR11
-    - file: sections/Thoracic Spine
+      - file: Duma-1999-upper-arm/SAFER_11.0/Duma-1999-upper-arm-SAFEFR11
+      - file: Kemper-2005-upper-arm/SAFER_11.0/Kemper-2005-upper-arm-SAFEFR11
+    - file: sections/Thoracic_Spine
       sections:
-      - file: Panjabi-1976-thoracic-spine/SAFER 11.0/Panjabi-1976-Thoracic-SAFEFR11
-      - file: Wilke-2017-thoracic-spine/SAFER 11.0/Wilke-2017-Thoracic-SAFEFR11
+      - file: Panjabi-1976-thoracic-spine/SAFER_11.0/Panjabi-1976-Thoracic-SAFEFR11
+      - file: Wilke-2017-thoracic-spine/SAFER_11.0/Wilke-2017-Thoracic-SAFEFR11
     - file: sections/Thorax
       sections:
       - file: Kang-2020-isolated-rib/SAFER_11.0/Kang-2020
       - file: Kindig-2009-isolated-rib/SAFER_11.0/Kindig-2009
-    - file: sections/Lumbar spine
+    - file: sections/Lumbar_spine
       sections:
       - file: Demetropoulus-1988-lumbar-spine/SAFER_11.0/Demetropolus-1998
       - file: Yamamoto-1990-lumbar-spine/SAFER_11.0/yamamoto-1990
@@ -34,17 +34,17 @@ parts:
       sections:
       - file: Kemper-2008-Pelvis/SAFER_11.0/Kemper-2008
       - file: Guillemot-1998-Pelvis/SAFER_11.0/Guillemot-1998
-    - file: sections/Lower Extremity
+    - file: sections/Lower_Extremity
       sections:
       - file: Ivarsson-2009-femur-shaft/SAFER_11.0/Ivarsson-2009
-      - file: Harden-2021-tibia-shaft/SAFER 11.0/Harden-2021-tibia-shaft-SAFEFR11
+      - file: Harden-2021-tibia-shaft/SAFER_11.0/Harden-2021-tibia-shaft-SAFEFR11
   - caption: Full body - Passive
     chapters:
-    - file: sections/Front Impact
+    - file: sections/Front_Impact
       sections:
       - file: Shaw-2009-gold-standard-1/SAFER_11.0/GS1-2009-BC_kinematic-plots
       - file: Lebarbe-2012-frontal-hub/SAFER_11.0/lebarbe
-    - file: sections/Side Impact
+    - file: sections/Side_Impact
       sections:
       - file: Viano-1989-hub-impacts/SAFER_11.0/Viano-1989
       - file: Miller-2013-Nearside/SAFER_11.0/Miller-2013

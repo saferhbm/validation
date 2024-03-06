@@ -1,4 +1,0 @@
-# Upper Extremity
-
-```{tableofcontents}
-```
